@@ -2,6 +2,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -22,14 +23,18 @@ export const SoftwareComponent = () => {
         <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Product Ecosystem</p>
         <h2 className="text-4xl md:text-5xl font-black tracking-tight">Plataformas confiables, escalables y seguras.</h2>
         </motion.div>
-        <motion.button 
+        {/* <motion.button 
           {...fadeIn}
           transition={{ delay: 0.2 }}
           className="text-primary font-bold flex items-center gap-2 group"
         >
           Explorar catálogo completo
           <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-        </motion.button>
+        </motion.button> */}
+        <Link href="/proyectos" className="text-primary font-bold flex items-center gap-2 group">
+          Explorar catálogo completo
+          <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </Link>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <motion.div 

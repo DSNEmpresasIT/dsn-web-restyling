@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -54,7 +55,7 @@ export const InfraComponent = () => {
             <h4 className="text-xl font-bold mb-4 uppercase tracking-tighter text-white">Cybersecurity Unit</h4>
             <p className="text-white/80 text-sm">Unidad táctica de protección de perímetros lógicos y auditoría de vulnerabilidades.</p>
           </div>
-          <button className="mt-8 border-b border-white text-white font-bold text-xs uppercase tracking-widest w-fit hover:border-transparent transition-all">Hablar con un experto</button>
+          <Link href="/contacto" className="mt-8 border-b border-white text-white font-bold text-xs uppercase tracking-widest w-fit hover:border-transparent transition-all">Hablar con un experto</Link>
         </motion.div>
         </div>
         </div>

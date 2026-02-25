@@ -23,9 +23,6 @@ export default function ProjectsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-20"
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-            Portafolio Institucional
-          </div>
           <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tighter">
             Proyectos en <span className="text-primary">operación crítica</span>
           </h1>
