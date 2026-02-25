@@ -180,6 +180,7 @@ export default function Home() {
       </section>
 
       <MarketingAndBranding />
+      
       <ClientsSection />
 
       <section className="py-24">
