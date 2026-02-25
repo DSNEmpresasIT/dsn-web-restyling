@@ -19,22 +19,13 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center bg-background-dark hero-mesh overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background-dark to-accent-violet/5 animate-technical-gradient"></div>
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 relative z-10 py-20">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="flex flex-col justify-center"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-              </span>
-              Base en Concordia, Entre Ríos
-            </div>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-6 italic">
-              DSN<br /><span className="text-primary">EMPRESAS</span>
-            </h1>
+            <h1 className="text-6xl font-black tracking-tighter leading-none mb-6  md:text-6xl">Alta disponibilidad no es una promesa. <span className="text-primary">Es diseño.</span></h1>
             <p className="text-xl text-slate-400 max-w-lg mb-10 leading-relaxed font-light">
               Ingeniería y software de calidad diseñados para alta demanda y disponibilidad. Operamos el núcleo crítico de organizaciones modernas.
             </p>
@@ -48,7 +39,7 @@ export default function Home() {
               </Link>
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: -2 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
@@ -56,9 +47,9 @@ export default function Home() {
           >
             <div className="absolute -inset-10 bg-primary/20 blur-[120px] rounded-full"></div>
             <div className="relative border border-white/10 bg-surface/50 rounded-2xl p-4 backdrop-blur-sm overflow-hidden group">
-              <Image 
-                className="rounded-xl grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-60" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLNI0kFe_ZK7egnf6HEmy8FPdaPrLyIgFaJbcvemG44BfcqDYrwT5U9Fc0YUKvs-FYH3uEsnglkcu33uoEaWIK6az6jKhPwnt_7GKXu77emLUHSOmYa45zHpcCtq5S3bJDN8ega2tb0tuKnohhW4ItBxxwTqEwDIlkCGQlNjqJTjYdQIPAVp_NRi915fES7N5CC_Ng2YYmAvytzGsuq2hZZ-cutSF0v0-lR_vbHx6r86JpujGLfHRr6OE-sTYRTV0HytQuKQXFkRY" 
+              <Image
+                className="rounded-xl grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-60"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLNI0kFe_ZK7egnf6HEmy8FPdaPrLyIgFaJbcvemG44BfcqDYrwT5U9Fc0YUKvs-FYH3uEsnglkcu33uoEaWIK6az6jKhPwnt_7GKXu77emLUHSOmYa45zHpcCtq5S3bJDN8ega2tb0tuKnohhW4ItBxxwTqEwDIlkCGQlNjqJTjYdQIPAVp_NRi915fES7N5CC_Ng2YYmAvytzGsuq2hZZ-cutSF0v0-lR_vbHx6r86JpujGLfHRr6OE-sTYRTV0HytQuKQXFkRY"
                 alt="Server Rack"
                 width={600}
                 height={400}
@@ -72,11 +63,11 @@ export default function Home() {
                   <div className="space-y-3">
                     {[92, 78, 85].map((w, i) => (
                       <div key={i} className="h-1 bg-white/5 rounded-full overflow-hidden">
-                        <motion.div 
+                        <motion.div
                           initial={{ width: 0 }}
                           animate={{ width: `${w}%` }}
-                          transition={{ duration: 1.5, delay: 0.5 + i*0.2 }}
-                          className={`h-full ${i === 1 ? 'bg-accent-violet' : 'bg-primary'}`} 
+                          transition={{ duration: 1.5, delay: 0.5 + i * 0.2 }}
+                          className={`h-full ${i === 1 ? 'bg-accent-violet' : 'bg-primary'}`}
                         />
                       </div>
                     ))}
@@ -92,7 +83,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {METRICS.map((m, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 {...fadeIn}
                 transition={{ delay: i * 0.1 }}
@@ -117,7 +108,7 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {SERVICES.map((s, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 {...fadeIn}
                 transition={{ delay: i * 0.1 }}
@@ -142,17 +133,17 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {PROJECTS.slice(0, 2).map((p, i) => (
-              <motion.div 
-                key={i} 
+              <motion.div
+                key={i}
                 {...fadeIn}
                 whileHover={{ y: -5 }}
                 className="group cursor-pointer"
               >
                 <Link href={`/proyectos/${p.id}`}>
                   <div className="aspect-[16/9] overflow-hidden rounded-2xl mb-6 relative">
-                    <Image 
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100" 
-                      src={p.image} 
+                    <Image
+                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100"
+                      src={p.image}
                       alt={p.title}
                       width={800}
                       height={450}
@@ -182,7 +173,7 @@ export default function Home() {
 
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <motion.div 
+          <motion.div
             {...fadeIn}
             className="relative bg-surface border border-white/10 rounded-3xl p-12 md:p-24 overflow-hidden text-center"
           >

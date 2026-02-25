@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -10,9 +10,6 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="bg-primary p-1.5 rounded transition-transform group-hover:rotate-12">
-            <span className="material-symbols-outlined text-white text-2xl">account_tree</span>
-          </div>
           <span className="text-xl font-black tracking-tight uppercase">
             DSN <span className="text-primary/80">Empresas</span>
           </span>
