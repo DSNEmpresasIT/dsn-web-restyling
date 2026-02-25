@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import AppShell from '@/components/AppShell';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dsnempresas.com.ar'),
@@ -91,11 +90,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-background-dark text-slate-100 antialiased overflow-x-hidden min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow">
+        <AppShell>
           {children}
-        </main>
-        <Footer />
+        </AppShell>
       </body>
     </html>
   );
