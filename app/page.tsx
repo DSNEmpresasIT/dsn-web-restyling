@@ -7,6 +7,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { SoftwareComponent } from '@/components/SoftwareComponent';
 import { InfraComponent } from '@/components/InfraComponent';
+import MarketingAndBranding from '@/components/MarketingAndBranding';
+import ClientsSection from '@/components/ClientsSection';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -50,7 +52,7 @@ export default function Home() {
             <div className="absolute -inset-10 bg-primary/20 blur-[120px] rounded-full"></div>
             <div className="relative border border-white/10 bg-surface/50 rounded-2xl p-4 backdrop-blur-sm overflow-hidden group">
               <Image
-                className="rounded-xl grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-60"
+                className="rounded-xl animated-hero opacity-60 grayscale-0"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLNI0kFe_ZK7egnf6HEmy8FPdaPrLyIgFaJbcvemG44BfcqDYrwT5U9Fc0YUKvs-FYH3uEsnglkcu33uoEaWIK6az6jKhPwnt_7GKXu77emLUHSOmYa45zHpcCtq5S3bJDN8ega2tb0tuKnohhW4ItBxxwTqEwDIlkCGQlNjqJTjYdQIPAVp_NRi915fES7N5CC_Ng2YYmAvytzGsuq2hZZ-cutSF0v0-lR_vbHx6r86JpujGLfHRr6OE-sTYRTV0HytQuKQXFkRY"
                 alt="Server Rack"
                 width={600}
@@ -176,6 +178,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <MarketingAndBranding />
+      <ClientsSection />
 
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6">
