@@ -5,6 +5,8 @@ import { AnimatedNumber } from '@/components/AnimatedNumber';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { SoftwareComponent } from '@/components/SoftwareComponent';
+import { InfraComponent } from '@/components/InfraComponent';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -123,6 +125,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SoftwareComponent></SoftwareComponent>
+      
+      <InfraComponent></InfraComponent>
 
       <section className="py-24" id="proyectos">
         <div className="max-w-7xl mx-auto px-6">
