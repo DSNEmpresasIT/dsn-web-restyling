@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { PROJECTS } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -46,19 +46,13 @@ export default function ProjectsPage() {
           ))}
         </div>
 
-        <motion.div 
-          layout
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
-          <AnimatePresence mode="popLayout">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((p, i) => (
               <motion.div 
-                layout
                 key={p.id}
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.4, delay: i * 0.05 }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: i * 0.04, ease: "easeOut" }}
                 className="group relative overflow-hidden rounded-2xl border border-white/5 bg-surface hover:border-primary/50 transition-all"
               >
                 <Link href={`/proyectos/${p.id}`}>
@@ -91,8 +85,7 @@ export default function ProjectsPage() {
                 </Link>
               </motion.div>
             ))}
-          </AnimatePresence>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
