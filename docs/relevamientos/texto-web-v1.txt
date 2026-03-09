@@ -1,0 +1,114 @@
+HOME
+DSN Empresas
+Slogan: Ingeniería y software de calidad diseñados para alta demanda y disponibilidad.
+Slogan: Confianza construida en proyectos reales.
+Somos una Empresa Argentina especializada en diseñar, ejecutar y operar soluciones end-to-end para entornos donde no se puede fallar: aeropuertos, pasos fronterizos, industria, empresas y organismos.
+Propuesta de valor
+Soluciones llave en mano: ingeniería, implementación, commissioning y soporte.
+Productos propios: Border Pass, Border Ticket, Border Access, Catálogo Digital y Micrositios.
+Infraestructura crítica: señales débiles, comunicaciones, energía, datacenter y continuidad operativa.
+Ciberseguridad transversal: segmentación, auditoría y hardening según alcance.
+Proyectos y experiencia en operación crítica
+Referencias: Aeropuerto Internacional Comodoro Pierrestegui, Paso de Frontera Concordia - Salto, Paso de Frontera La Quiaca Villazón, Aeropuerto de Río Gallegos.
+CTA (HOME): Coordina con nosotros una reunión técnica para definir alcance, plazos y plan de ejecución.
+
+
+SOFTWARE
+Plataformas confiables, escalables y seguras.
+Construimos plataformas API-first listas para escalar, con arquitecturas modulares, prácticas DevOps/CI/CD, observabilidad y seguridad por diseño para operación continua.
+Nuestros productos:
+1) Suite Border (Aeropuertos, Pasos de Frontera y Control Operativo)
+Border Ticket: turnos inteligentes + gestión de atención. Backend en NestJS y colas en Redis, altamente escalable.
+Border Pass: procesamiento y control migratorio para pasos fronterizos, optimizando tiempos, validación y trazabilidad.
+Border Access: control de accesos para empresas y organismos, basado en la lógica operativa de la suite Border (zonas, credenciales, auditoría).
+2) Catálogo Digital (Gestión + e-commerce)
+Plataforma con dashboard para productos/servicios, presupuestos, stock e integración a ERP mediante API y vistas de base de datos.
+3) Micrositios
+Sitios profesionales en tiempo récord con plataforma de desarrollo rápido e IA generativa para creación de contenido y estructura comercial.
+4) Desarrollo a medida (Plataformas, tableros, Cloud Data Warehouse)
+Sistemas a medida para operación crítica: integraciones, tableros de comando, sistemas de soporte de decisiones (DSS), Data Warehouse empresarial (EDW), automatización, trazabilidad y workflows. Data Lakehouse / Data Lake: estructura de DW y flexibilidad/volumen en la nube
+5) Sistemas de Planificación de recursos Empresariales (ERP), 100% en la nube con desarrollo puntual de aplicaciones.
+CTA (SOFTWARE): Solicita una consultoría completa para tener un diagnóstico técnico de tu caso de uso.
+INFRAESTRUCTURA
+Infraestructura de alta exigencia, diseñada para operar sin interrupciones.
+Diseñamos y ejecutamos proyectos de infraestructura crítica con foco en alta disponibilidad, redundancia y cumplimiento de normas y estándares internacionales de seguridad, para entornos donde la continuidad operativa es un requisito.
+Ejecución integral: del Proyecto Ejecutivo a la operación
+Nos hacemos cargo del ciclo completo: ingeniería del modelo solución, Proyecto Ejecutivo, provisión, implementación, commissioning, pruebas de aceptación y entrega documentada. Entregamos proyectos llave en mano con soporte y garantía postventa por períodos extendidos.
+Capacidades principales (llave en mano)
+Señales débiles: arquitectura e integración de sistemas, canalizaciones, racks, cableado, tableros, distribución y ordenamiento técnico.
+Redes y conectividad: cableado estructurado, fibra óptica (certificación y documentación), enlaces de alta disponibilidad.
+Energía crítica: tableros, protecciones, UPS, respaldo, autonomía, continuidad y pruebas de carga.
+Operación y control: videovigilancia IP, control de accesos, megafonía/PA, notificación y evacuación integradas a procedimientos operativos.
+Datacenter / salas técnicas: diseño, montaje, climatización, energía, cableado, seguridad lógica y documentación “as built”.
+Ciberseguridad aplicada a infraestructura
+Seguridad por diseño para entornos críticos: segmentación, control de privilegios, auditoría, gestión de accesos y hardening alineado a requerimientos del cliente/organismo.
+Integración con organismos y operación regulada
+Experiencia en proyectos con coordinación de estándares y protocolos de PSA, ANAC, ORSNA, EANA, DNM, Interpol, ARCA, SENASA, Gendarmería Nacional Argentina y Aeropuertos Argentina 2000 (según alcance).
+CTA (INFRA): Coordinemos un relevamiento técnico y entregamos una propuesta ejecutiva con alcance, hitos, documentación y garantía.
+OBRAS.
+Panorama XXI.
+Edificio de 14 pisos, Construcción, desarrollo y comercialización. Empleo de capital propio y de inversores. Concepción total, abarcando diseño, planos, arquitectura, construcción y provisión de equipamiento, utilizando herramientas BIM y metodología de Last Planner System (LPS) basadas en Lean Construction. Edificio situado  en una de las mejores esquinas de la Ciudad de Concordia. Diseño, proyecto ejecutivo, planos presentaciones y construcción de todo el proyecto. En etepa final de construcción.
+Obras eléctricas.
+Versión para Brochure (breve y más descriptiva)
+Argentina Construcciones Civiles, empresa del Grupo DSN Empresas, desarrolló obras de ampliación y refacción de redes de saneamiento para el Municipio de Concordia, con más de 300 cuadras de redes ejecutadas. Una experiencia concreta en infraestructura urbana, con capacidad de planificación y ejecución sostenida a escala ciudad.
+Ampliación y refacción de redes de Saneamiento (Versión Web)
+Argentina Construcciones Civiles (Grupo DSN Empresas) ejecutó obras de ampliación y refacción de redes de saneamiento para el Municipio de Concordia, alcanzando más de 300 cuadras de redes construidas y renovadas en Concordia
+
+BRANDING Y MARKETING DIGITAL
+Estrategia, contenido y performance con foco en resultados.
+Estrategia y producción orientada a resultados, integrando marca, performance y automatización comercial.
+Servicios
+Branding y posicionamiento
+Sitios web comerciales y landings
+Contenido y social media (enfoque conversión)
+Campañas (Meta/Google) + reporting
+Automatización: formularios, CRM, embudos y seguimiento
+CTA (MARKETING): Armemos una estrategia simple, medible y escalable.
+
+
+NUESTROS CLIENTES
+Slogan: Confianza construida en proyectos reales.
+
+Ministerio del Interior
+Equipos de abordo S.A. (Edasa) 
+Dirección Nacional de Asuntos técnicos de Frontera
+Artear Canal 13, Grupo Clarín
+Canal 9 del Litoral
+Paso de Frontera la Quiaca Villazón
+Cooperativa Eléctrica de Concordia
+Enersa (Energía de Entre Ríos S.A.)
+Triple Frontera 
+Fábrica 
+LP Pietroboni S.A.
+Aeropuertos Argentina
+Aeropuerto Internacional de Concordia
+Aeropuerto de Río Gallegos
+UEP - Unidad Ejecutora de la Provincia de Entre Ríos
+Grupo Imágenes Médicas
+Paso Frontera Concordia – Salto
+Sancor Seguros
+Municipalidad de Concordia
+Municipalidad de Urdinarrain
+Municipalidad de Diamante
+Félix Menéndez Distribuidora.
+El Ente Mixto Concordiense de Turismo (EMCONTUR).
+Gobierno de la Provincia de Entre Ríos.
+Hospital Alemán (Vixonic Argentina).
+Dolmat Materiales.
+IERIC (Inst. de Est. y Reg. de la Ind. de la Const.)
+Potenciar SGR.
+Carrefour
+Tarjeta Naranja.
+Sancor Salud.
+Divanlito.
+Frigorífico el Brillante SRL.
+Cámara de exportadores del Citrus del NEA 
+Edificio Panorama XXI.
+Naunce comunications USA.
+Canal 9 del litoral.
+Bermon. Distribuidora
+T-Gestiona Grupo Telefónica de Argentina.
+Remate final (Footer)
+Slogan: De la ingeniería a la operación, con evidencia y garantía.
+DSN Empresas.
+Experiencia comprobada para entregar tu proyecto listo para operar, con alta disponibilidad, trazabilidad y garantía.

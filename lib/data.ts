@@ -37,7 +37,7 @@ export const METRICS: Metric[] = [
 export const PROJECTS: Project[] = [
   {
     id: "comodoro-pierrestegui",
-    title: "Aeropuerto Comodoro Pierrestegui",
+    title: "Aeropuerto Internacional Comodoro Pierrestegui",
     category: "Infraestructura Crítica",
     location: "Concordia, Entre Ríos",
     description: "Renovación integral de sistemas de balizamiento y control de tráfico aéreo.",
@@ -60,15 +60,15 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "panorama-xxi",
-    title: "Panorama XXI – Torre Corp.",
+    title: "Panorama XXI",
     category: "BIM / Lean Construction",
-    location: "Edificación Corporativa",
-    description: "Torre corporativa de 14 pisos. Implementación completa de redes, control de acceso y BMS.",
+    location: "Concordia, Entre Ríos",
+    description: "Edificio de 14 pisos con concepción integral: diseño, planos, arquitectura, construcción y provisión de equipamiento con BIM y metodología Last Planner System (Lean Construction).",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAEjaKvC61NLs_VXKKHUs9HIiw3_4TJM0paAk9t4uaqtaMdmdDimoeFn7aoFQgooSaNHagroOmwAIfmYWxTK-jaLJp1TQ9tMGMbzwLuk3-12MvHWeA15Dl49xChOXSt3OhuOTQHmMEXrM2zP2C3hP752zL9N9MwZNTkcJoX_BPwCTRv00NQr88BdH2K-5goRaCiAOF-djBAMK0i_wADlYP1UkIvvHR-KdbHYRbeZWgdJtGycWOnsM4NWk9e1-JPveOz6g8Uk0oWi1Q"
   },
   {
     id: "paso-frontera",
-    title: "Paso de Frontera Concordia – Salto",
+    title: "Paso de Frontera Concordia - Salto",
     category: "Software + Infraestructura",
     location: "Binacional",
     description: "Sistemas de control y automatización fronteriza para flujos migratorios de alta densidad.",
@@ -76,19 +76,22 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "aeropuerto-tucuman",
-    title: "Aeropuerto Int. de Tucumán",
-    category: "Infraestructura",
+    title: "Aeropuerto Benjamín Matienzo, Tucumán",
+    category: "Infraestructura Crítica",
     location: "Tucumán, Argentina",
-    description: "Ampliación de plataforma comercial y logística técnica para operaciones de carga y pasajeros.",
+    description: "Proyecto de infraestructura aeroportuaria para continuidad operativa en entorno de alta exigencia.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAuHC3Z7q3K4_O-j0MNsa9dMGFZpUVrDR101kf5TKEIBIUN5a7Pjn8B8Z1oYNSwK2HXGVc-1gvNEJJswrDi1eQGaU8N_2ol20Hl8Z5Iyq3x03De0t_yldfxlfuqSImt6j8wYREEeXVeLZ4mXceSFe79C1GDtZLe6uhdVwsjETIV6vddx8hUvAvOfoVcDAJCc1yLtObO6dAGfGmXmRjvGjUdJ5Z8GSUyfmei9JhYvo4386OGVMKDMW-PzDdgGXYkECfXAqPfA5pPZEY"
   },
   {
     id: "redes-saneamiento",
-    title: "Redes de Saneamiento",
+    title: "Ampliación y refacción de redes de saneamiento",
     category: "Obras Urbanas",
-    location: "Impacto Social",
-    description: "Infraestructura urbana masiva con más de 300 cuadras intervenidas para el Municipio de Concordia.",
+    location: "Concordia, Entre Ríos",
+    description: "Argentina Construcciones Civiles (Grupo DSN Empresas) ejecutó obras de ampliación y refacción de redes de saneamiento para el Municipio de Concordia, alcanzando más de 300 cuadras construidas y renovadas.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAXVybmXIq28601sAn-Z_GAnPA1UfsdoTUlOD4OQ5h2Q2zjHCuIEstGGB64zV0rhbaXKyf7K_lDecaGMdF1GsHXkYOCGB0RTZ3A0j756DQMuVzH3YwgT8RlKhvGl7ScUDSfa0WlprePv4f_gj2bO9v27Jl42blCt91RVCz6t_8-gQrxi-Dpogp3jm0d0HpeVUcElS76cRZDfLqGOyBBdLfBkTFAjRJsfqcIapQV6LRdXs7tRgYk-ttedGxgUwa3yphhNV6gYDLyAqA"
+    ,
+    sector: "Infraestructura Urbana",
+    client: "Municipio de Concordia"
   }
 ];
 

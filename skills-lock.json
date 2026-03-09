@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "skills": {
+    "docs-writer": {
+      "source": "google-gemini/gemini-cli",
+      "sourceType": "github",
+      "computedHash": "3910559dd53ebea1c3468d69537bf1d6a3ba23d6db0b1e0328c9758fe345da10"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
+    },
+    "react-expert": {
+      "source": "reactjs/react.dev",
+      "sourceType": "github",
+      "computedHash": "e53cc1a286987b7f28ba5cdd29e8ebacdde0d5822d40e938652fec8c47f33efa"
+    },
+    "react-nextjs-patterns": {
+      "source": "duyet/claude-plugins",
+      "sourceType": "github",
+      "computedHash": "fe49d2981c8740eda1e24e18463d259087026812dbbeb6946cbd9b71950c1f59"
+    },
+    "tailwind-4-docs": {
+      "source": "lombiq/tailwind-agent-skills",
+      "sourceType": "github",
+      "computedHash": "883754f860c9b4115ae7bf14b5dabb469a297c74b8a308a2d870d9c90af1ac00"
+    }
+  }
+}

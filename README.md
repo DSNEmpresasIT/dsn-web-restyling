@@ -62,6 +62,20 @@ npm start
 └── tailwind.config.ts    # Configuración de Tailwind
 ```
 
+## Documentación operativa
+
+Estos documentos te ayudan a mantener trazabilidad de cambios y facilitar
+handoffs entre developers.
+
+- `docs/CHANGELOG.md`: registro de cambios relevantes.
+- `docs/DEV_CONTEXT.md`: contexto actual del proyecto y flujo de trabajo con IA.
+
+### Uso rápido para nuevos devs
+
+1. Lee `docs/DEV_CONTEXT.md` para entender estado y prioridades.
+2. Revisa `docs/CHANGELOG.md` para ver cambios recientes.
+3. Antes de cerrar tu tarea, actualiza `docs/CHANGELOG.md` si tu cambio aplica.
+
 ## Linting
 
 ```bash
