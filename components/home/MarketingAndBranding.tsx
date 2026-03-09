@@ -66,7 +66,7 @@ const MarketingAndBranding = () => {
               className="p-8 border border-white/5 bg-slate-800 rounded-xl transition-all group"
             >
               <span className="material-symbols-outlined text-primary text-6xl mb-6 group-hover:scale-110 transition-transform inline-block">{s.icon}</span>
-              <h4 className="text-4xl font-bold mb-3 text-white">{s.title}</h4>
+              <h4 className="text-2xl md:text-4xl font-bold mb-3 text-white">{s.title}</h4>
               <p className="text-slate-400 text-sm leading-relaxed">{s.desc}</p>
             </motion.div>
           ))}

@@ -14,7 +14,7 @@ const HeroComponent = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col justify-center"
         >
-          <h1 className="uppercase text-4xl md:text-6xl xl:text-7xl 2xl:text-8xl font-semibold tracking-tighter leading-none mb-6">Confianza construida en <span className="text-primary">proyectos reales</span></h1>
+          <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-semibold tracking-tighter leading-none mb-6">Confianza construida en <span className="text-primary">proyectos reales</span></h1>
           <p className="text-xl text-slate-400 max-w-lg mb-10 leading-relaxed font-light">
             Ingeniería y software de calidad diseñados para alta demanda y disponibilidad. Operamos el núcleo crítico de organizaciones modernas.
           </p>

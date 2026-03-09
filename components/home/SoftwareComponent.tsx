@@ -50,7 +50,7 @@ export const SoftwareComponent = () => {
                   <span className="px-2 py-1 bg-white/15 border border-white/10 rounded text-[10px] text-slate-200">REDIS</span>
                 </div>
               </div>
-              <h3 className="text-3xl font-bold mb-4">Suite Border</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Suite Border</h3>
               <p className="text-slate-400 mb-8 leading-relaxed">Gestión avanzada de perímetros y control de acceso industrial con integración en tiempo real y biometría.</p>
               <div className="flex flex-wrap gap-3">
                 <span className="text-xs font-semibold px-3 py-1 bg-white/15 rounded-full text-slate-300">Control de Activos</span>
@@ -72,7 +72,7 @@ export const SoftwareComponent = () => {
                   <span className="px-2 py-1 bg-white/15 border border-white/10 rounded text-[10px] text-slate-200">NEXT.JS</span>
                 </div>
               </div>
-              <h3 className="text-3xl font-bold mb-4">Catálogo Digital</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Catálogo Digital</h3>
               <p className="text-slate-400 mb-8 leading-relaxed">Plataforma centralizada para la administración de activos digitales y servicios gubernamentales ciudadanos.</p>
               <div className="flex flex-wrap gap-3">
                 <span className="text-xs font-semibold px-3 py-1 bg-white/15 rounded-full text-slate-300">Gestión Documental</span>

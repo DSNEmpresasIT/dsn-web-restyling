@@ -22,9 +22,10 @@ export default function ContactContent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight"
           >
-            Coordinemos una <span className="text-primary">reunión técnica</span>
+            <h1 className="text-5xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 leading-tight tracking-tighter uppercase max-w-[700px] m-auto">
+              Coordinemos una reunión técnica
+            </h1>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}

@@ -40,7 +40,7 @@ export const InfraComponent = () => {
               className="bg-slate-800 p-10 border border-white/10 cursor-default rounded-2xl"
             >
               <span className="material-symbols-outlined text-primary mb-4 text-3xl">{item.icon}</span>
-              <h4 className="text-4xl font-bold mb-4 tracking-tighter">{item.title}</h4>
+              <h4 className="text-2xl md:text-4xl font-bold mb-4 tracking-tighter">{item.title}</h4>
               <p className="text-slate-400 text-sm">{item.desc}</p>
             </motion.div>
           ))}
@@ -52,7 +52,7 @@ export const InfraComponent = () => {
           >
             <div>
               <span className="material-symbols-outlined text-white mb-4 text-3xl">shield_locked</span>
-              <h4 className="text-4xl font-bold mb-4 tracking-tighter text-white">Cybersecurity Unit</h4>
+              <h4 className="text-2xl md:text-4xl font-bold mb-4 tracking-tighter text-white">Cybersecurity Unit</h4>
               <p className="text-white/80 text-sm">Unidad táctica de protección de perímetros lógicos y auditoría de vulnerabilidades.</p>
             </div>
             <Link href="/contacto" className="mt-8 border-b border-white text-white font-bold text-xs uppercase tracking-widest w-fit hover:border-transparent transition-all">Hablar con un experto</Link>

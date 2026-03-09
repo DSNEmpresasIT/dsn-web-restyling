@@ -60,18 +60,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             {...fadeIn}
-            className="relative bg-surface border border-white/10 rounded-3xl p-12 md:p-24 overflow-hidden text-center"
+            className="relative bg-surface border border-white/10 rounded-3xl p-5 md:p-24 overflow-hidden text-center"
           >
             <div className="absolute inset-0 hero-mesh opacity-20"></div>
-            <div className="relative z-10">
-              <h2 className="text-4 md:text-7xl font-semibold uppercase mb-8 leading-tight tracking-tighter">
+            <div className="relative z-10 flex flex-col justify-center">
+              <h2 className="text-3xl md:text-7xl font-semibold uppercase mb-8 leading-tight tracking-tighter">
                 De la ingeniería a la operación,<br /><span className="text-primary">con evidencia y garantía.</span>
               </h2>
               <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12 font-light">
                 Estamos listos para su próximo desafío de alta disponibilidad. Nuestro equipo técnico responderá en menos de 24 horas.
               </p>
-              <Link href="/contacto" className="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-2xl shadow-primary/20 transition-all hover:scale-105">
-                Agendar consulta técnica gratuita
+              <Link href="/contacto" className="flex justify-center m-auto bg-primary hover:bg-primary/90 text-white px-5 py-2 md:px-10 md:py-5 rounded-xl font-bold md:text-lg shadow-2xl shadow-primary/20 transition-all hover:scale-105">
+                <span>Agendar consulta técnica gratuita</span>
               </Link>
             </div>
           </motion.div>

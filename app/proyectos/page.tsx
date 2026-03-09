@@ -23,15 +23,15 @@ export default function ProjectsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-20"
         >
-          <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-tight tracking-tighter">
-            Proyectos en <span className="text-primary">operación crítica</span>
+          <h1 className="text-5xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 leading-tight tracking-tighter uppercase max-w-[700px] m-auto">
+            Proyectos en operación crítica
           </h1>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
             Ingeniería, software e infraestructura ejecutada para entornos donde no se puede fallar. Garantía técnica de nivel institucional.
           </p>
         </motion.div>
 
-        <div className="flex justify-center gap-4 mb-16 overflow-x-auto pb-4">
+        <div className="flex flex-wrap justify-center gap-4 mb-16 overflow-x-auto pb-4">
           {categories.map((c) => (
             <button 
               key={c}
@@ -50,7 +50,7 @@ export default function ProjectsPage() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: i * 0.04, ease: "easeOut" }}
-                className="group relative overflow-hidden rounded-2xl border border-white/5 bg-surface hover:border-primary/50 transition-all"
+                className="group relative overflow-hidden rounded-2xl border border-white/5 bg-slate-800 hover:border-primary/50 transition-all"
               >
                 <Link href={`/proyectos/${p.id}`}>
                   <div className="aspect-[4/3] overflow-hidden relative">
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-80" />
                     <div className="absolute top-4 left-4">
-                      <span className="bg-primary/20 backdrop-blur-md border border-primary/30 px-3 py-1 rounded text-[10px] font-bold uppercase text-primary">
+                      <span className="bg-primary/50 backdrop-blur-md border border-primary/30 px-3 py-1 rounded text-[10px] font-bold uppercase text-white">
                         {p.category}
                       </span>
                     </div>
