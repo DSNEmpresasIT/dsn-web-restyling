@@ -5,7 +5,7 @@ import { SoftwareComponent } from '@/components/home/SoftwareComponent';
 import { InfraComponent } from '@/components/home/InfraComponent';
 import Link from 'next/link';
 import MarketingAndBranding from '@/components/home/MarketingAndBranding';
-import ClientsSection from '@/components/ClientsSection';
+import ClientsSection from '@/components/home/ClientsSection';
 import HeroComponent from '@/components/home/HeroComponent';
 import PropuestaValorComponent from '@/components/home/PropuestaValorComponent';
 import ProjectsSection from '@/components/home/ProjectsSectionComponent';

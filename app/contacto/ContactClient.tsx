@@ -15,17 +15,16 @@ export default function ContactContent() {
       <section className="relative py-16 md:py-24 overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
           <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[128px]"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px]"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/90 rounded-full blur-[128px]"></div>
         </div>
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
+            className='text-5xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 leading-tight tracking-tighter uppercase max-w-[700px] m-auto'
           >
-            <h1 className="text-5xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 leading-tight tracking-tighter uppercase max-w-[700px] m-auto">
-              Coordinemos una reunión técnica
-            </h1>
+            Coordinemos una reunión técnica
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}

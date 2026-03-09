@@ -9,7 +9,7 @@
   inset: 0;
   border-radius: 9999px;
   padding: 1px;
-  background: conic-gradient(from 0deg, #f1f7ff, #313a3d, #ecedff, #abcdff, #ecedff);
+  background: conic-gradient(from 0deg, #ffffff, #313a3d, #ecedff, #3B96D1, #ecedff);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -24,7 +24,7 @@
   transform: rotate(180deg);
 }
 
-.aux {
+.innerShadow {
   background: #ffffff;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, rgba(235, 247, 255, 0.1) 100%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, #3b95d14b);
 }

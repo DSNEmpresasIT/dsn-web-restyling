@@ -63,27 +63,12 @@ const ClientsSection = () => {
           <motion.div
             {...fadeIn}
           >
-            {/* <h3 className="text-sm font-bold text-slate-400 mb-8 px-4 border-l-2 border-primary">Organismos e Instituciones</h3> */}
-            {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 transition-all">
-              {clients.map((org, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.05 }}
-                  className="aspect-square rounded-full text-center flex flex-col items-center justify-center text-slate-200 border border-slate-400/50 font-black text-base italic tracking-widest uppercase p-5"
-                >
-                  <span>{org.title}</span>
-                  {
-                    org.sub && <span className='text-xs text-slate-400'>{org.sub}</span>
-                  }
-                </motion.div>
-              ))}
-            </div> */}
             <div className="flex flex-wrap items-center justify-center gap-8 transition-all">
               {clients.map((org, i) => (
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.05 }}
-                  className={`${styles.gradientContainer} ${styles.aux} max-w-44 md:max-w-64 w-full aspect-square rounded-full text-center flex flex-col items-center justify-center text-slate-200 border border-slate-400/50 font-black text-xs md:text-base italic tracking-widest uppercase p-5`}
+                  className={`${styles.gradientContainer} ${styles.innerShadow} max-w-44 md:max-w-64 w-full aspect-square rounded-full text-center flex flex-col items-center justify-center text-slate-200 border border-slate-400/50 font-black text-xs md:text-base italic tracking-widest uppercase p-5`}
                 >
                   <span>{org.title}</span>
                   {
@@ -93,23 +78,6 @@ const ClientsSection = () => {
               ))}
             </div>
           </motion.div>
-          {/* <motion.div
-            {...fadeIn}
-            transition={{ delay: 0.2 }}
-          >
-            <h3 className="text-sm font-bold text-slate-400 mb-8 px-4 border-l-2 border-primary">Aeropuertos y Privados</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 transition-all">
-              {privates.map((org, i) => (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.05, opacity: 1 }}
-                  className="h-12 flex items-center justify-center text-slate-200 font-black text-xl italic tracking-widest uppercase"
-                >
-                  {org}
-                </motion.div>
-              ))}
-            </div>
-          </motion.div> */}
         </div>
       </div>
     </section>
