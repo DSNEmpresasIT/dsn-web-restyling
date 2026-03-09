@@ -14,8 +14,8 @@ const Login = () => {
               </div>
               <h2 className="text-white text-xl font-extrabold tracking-tight">DSN EMPRESAS</h2>
             </div>
-            <div className="space-y-6 my-auto">
-              <h1 className="text-white text-5xl font-black leading-tight tracking-tight">
+            <div className="space-y-6 my-auto max-w-xl">
+              <h1 className="text-white text-7xl font-black leading-tight tracking-tight">
                 Acceso Clientes DSN
               </h1>
               <p className="text-slate-400 text-lg leading-relaxed font-light max-w-lg">
