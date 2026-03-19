@@ -14,9 +14,10 @@ const HeroComponent = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col justify-center"
         >
-          <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-semibold tracking-tighter leading-none mb-6">Confianza construida en <span className="text-primary">proyectos reales</span></h1>
+          {/* <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-semibold tracking-tighter leading-none mb-6">Confianza construida en <span className="text-primary">proyectos reales</span></h1> */}
+          <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl font-semibold tracking-tighter leading-none mb-6">Soluciones de nivel global para <span className="text-primary">entornos de alta exigencia</span></h1>
           <p className="text-xl text-slate-400 max-w-lg mb-10 leading-relaxed font-light">
-            Ingeniería y software de calidad diseñados para alta demanda y disponibilidad. Operamos el núcleo crítico de organizaciones modernas.
+            Somos una Empresa Argentina especializada en diseñar, ejecutar y operar soluciones end-to-end para entornos donde no se puede fallar: aeropuertos, pasos fronterizos, industria, empresas y organismos.
           </p>
           <div className="flex flex-wrap gap-4">
             {/* <Link href="/contacto" className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-4 rounded-lg font-bold flex items-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">

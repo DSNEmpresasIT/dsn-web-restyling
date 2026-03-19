@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
-import { PROJECTS, getProjectById } from '@/lib/data';
+// import { PROJECTS, getProjectById } from '@/lib/data';
 import ProjectDetailClient from './ProjectDetailClient';
+import { getProjectById, PROJECTS,  } from '@/lib/projects';
 
 interface Props {
   params: Promise<{ id: string }>;

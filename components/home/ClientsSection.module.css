@@ -1,6 +1,5 @@
 .gradientContainer {
   position: relative;
-  cursor: pointer;
 }
 
 .gradientContainer::before {

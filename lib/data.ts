@@ -40,8 +40,8 @@ export const PROJECTS: Project[] = [
     title: "Aeropuerto Internacional Comodoro Pierrestegui",
     category: "Infraestructura Crítica",
     location: "Concordia, Entre Ríos",
-    description: "Renovación integral de sistemas de balizamiento y control de tráfico aéreo.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCt8Alwx8rWz7QXVqyjqFeQn-3l4T37m5NazFcT5bVvahdIxyK0ZWYbKetYWaIlVxiKeEeI91vNnXybSTNluJmZlX9Pfslif_A8wbqfde_W6mmK5nSjhHCCxbuoF_u_zfS7rBm8tqPX-LC2j_gEuZtdNuVWSfnM9Cug3gbPZ7RNaWQWE7TYyXhPU0dKeNKT3anFHVLgTXwmRvSOu_AnOr5jka2stwm8_g45HNNRGfzae3w0jX0smu7j6uq5gFkHjetrnK-N5qHZyTk",
+    description: "Provisión e integración de equipamiento tecnológico: megafonía/PA, control de accesos, racks y servidores, networking, cableado estructurado, CCTV y sistemas de protección contra incendios (PCI), con ejecución llave en mano.",
+    image: "/images/1500x700_aep.webp",
     year: "2023",
     sector: "Infraestructura Aeroportuaria",
     client: "Gobierno de Entre Ríos",
@@ -63,8 +63,8 @@ export const PROJECTS: Project[] = [
     title: "Panorama XXI",
     category: "BIM / Lean Construction",
     location: "Concordia, Entre Ríos",
-    description: "Edificio de 14 pisos con concepción integral: diseño, planos, arquitectura, construcción y provisión de equipamiento con BIM y metodología Last Planner System (Lean Construction).",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAEjaKvC61NLs_VXKKHUs9HIiw3_4TJM0paAk9t4uaqtaMdmdDimoeFn7aoFQgooSaNHagroOmwAIfmYWxTK-jaLJp1TQ9tMGMbzwLuk3-12MvHWeA15Dl49xChOXSt3OhuOTQHmMEXrM2zP2C3hP752zL9N9MwZNTkcJoX_BPwCTRv00NQr88BdH2K-5goRaCiAOF-djBAMK0i_wADlYP1UkIvvHR-KdbHYRbeZWgdJtGycWOnsM4NWk9e1-JPveOz6g8Uk0oWi1Q"
+    description: "Edificio de 14 pisos, Construcción, desarrollo y comercialización. Empleo de capital propio y de inversores. Concepción total, abarcando diseño, planos, arquitectura, construcción y provisión de equipamiento, utilizando herramientas BIM y metodología de Last Planner System (LPS) basadas en Lean Construction. Edificio situado  en una de las mejores esquinas de la Ciudad de Concordia. Diseño, proyecto ejecutivo, planos presentaciones y construcción de todo el proyecto. En etepa final de construcción.",
+    image: "/images/panorama-21.webp"
   },
   {
     id: "paso-frontera",
@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
     category: "Software + Infraestructura",
     location: "Binacional",
     description: "Sistemas de control y automatización fronteriza para flujos migratorios de alta densidad.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAH37Ph5WTehbUw-4o_BKr_Nmqe5hQws8Shy-c8TVoiXcF2QNTj_tOrZu4UDOWenEqAFy5qGRLFzjXfN4UX4ZGLUwbKZVuaeFp52ePe89Nn1csbKJbvl5kXHIhuLENmXhkZAdQogX3yvdJuOtLzWgR_Moyp6hJH_14aKgdNLA69jj_nompeSX9yOdK8_YR3h6pORBuX9JHoUitVf-HPw-AhvsBag_9G-fFnbOYEGxyaAs2tZbvnPyRqh2zuuSVfBbhciMsuANEW5lU"
+    image: "/images/1500x700_pasofronterizo.webp"
   },
   {
     id: "aeropuerto-tucuman",
@@ -96,10 +96,10 @@ export const PROJECTS: Project[] = [
 ];
 
 export const SERVICES: Service[] = [
-  { icon: "construction", title: "Soluciones llave en mano", description: "Desarrollo integral desde el diseño conceptual hasta la implementación." },
-  { icon: "developer_board", title: "Productos propios", description: "Software escalable diseñado para resolver necesidades específicas de industria." },
-  { icon: "settings_input_component", title: "Infraestructura crítica", description: "Soporte técnico para operaciones donde el tiempo de inactividad no es opción." },
-  { icon: "security", title: "Ciberseguridad", description: "Protección transversal de datos y procesos en toda la cadena digital." }
+  { icon: "construction", title: "Soluciones llave en mano", description: "Ingeniería, implementación, commissioning y soporte. Optimización desde el origen que garantiza sistemas rápidos, seguros y sin errores de compatibilidad." },
+  { icon: "developer_board", title: "Productos propios", description: "Border Pass, Border Ticket, Border Access, Sistemas FIDS, Sistemas de IA para Megafonía, Analítica de Video, Telemetría, iOT, Catálogo Digital y Micrositios." },
+  { icon: "settings_input_component", title: "Infraestructura crítica", description: "Señales débiles, comunicaciones, energía, datacenter y continuidad operativa." },
+  { icon: "security", title: "Ciberseguridad transversal", description: "Segmentación, auditoría y hardening según alcance." }
 ];
 
 export function getProjectById(id: string): Project | undefined {

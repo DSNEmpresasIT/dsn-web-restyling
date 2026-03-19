@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { getProjectById } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { getProjectById } from '@/lib/projects';
 
 interface ProjectDetailClientProps {
   id: string;
@@ -18,8 +18,8 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
   }
 
   return (
-    <div className="bg-background-dark min-h-screen py-12 px-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-background-dark min-h-screen py-12">
+      <div className="max-w-screen-2xl px-6 mx-auto">
         <nav className="flex items-center gap-2 text-sm mb-12 text-slate-500">
           <Link href="/proyectos" className="hover:text-primary transition-colors">Portafolio</Link>
           <span className="material-symbols-outlined text-sm">chevron_right</span>
@@ -46,7 +46,7 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
-              className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-bold tracking-widest uppercase rounded mb-4 border border-primary/30"
+              className="inline-block px-3 py-1 bg-primary/50 text-white text-xs font-bold tracking-widest uppercase rounded mb-4 border border-primary/30"
             >
               {project.category}
             </motion.span>
@@ -58,14 +58,14 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
             >
               {project.title}
             </motion.h1>
-            <motion.p 
+            {/* <motion.p 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
               className="text-slate-300 text-lg max-w-2xl font-light"
             >
               {project.description}
-            </motion.p>
+            </motion.p> */}
           </div>
         </motion.div>
 
@@ -73,15 +73,16 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
           <div className="lg:col-span-8 space-y-16">
             <section>
               <div className="flex items-center gap-3 mb-8">
-                <span className="material-symbols-outlined text-primary text-2xl">info</span>
-                <h3 className="text-2xl font-bold text-white tracking-tight uppercase">Contexto</h3>
+                {/* <span className="material-symbols-outlined text-primary text-2xl">info</span> */}
+                {/* <h3 className="text-2xl font-bold text-white tracking-tight uppercase">Contexto</h3> */}
+                <h3 className="text-2xl font-bold text-white tracking-tight uppercase">Descripción</h3>
               </div>
-              <p className="text-slate-400 leading-relaxed font-light text-lg">
-                Este proyecto representa un hito técnico en la región, donde DSN Empresas desplegó su capacidad integral de ingeniería y supervisión para garantizar la operatividad continua en condiciones críticas. El enfoque multidisciplinario permitió resolver desafíos logísticos y técnicos complejos manteniendo estándares internacionales de seguridad.
+              <p className="text-slate-400 leading-relaxed font-light text-lg" style={{ whiteSpace: 'pre-line' }}>
+                {project.description}
               </p>
             </section>
 
-            {project.scope && (
+            {/* {project.scope && (
               <section className="bg-surface/30 rounded-2xl p-10 border border-white/5">
                 <div className="flex items-center gap-3 mb-10">
                   <span className="material-symbols-outlined text-primary text-2xl">precision_manufacturing</span>
@@ -106,9 +107,9 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
                   ))}
                 </div>
               </section>
-            )}
+            )} */}
 
-            {project.results && (
+            {/* {project.results && (
               <section>
                 <div className="flex items-center gap-3 mb-10">
                   <span className="material-symbols-outlined text-primary text-2xl">trending_up</span>
@@ -130,20 +131,20 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
                   ))}
                 </div>
               </section>
-            )}
+            )} */}
           </div>
 
           <aside className="lg:col-span-4 space-y-8">
             <div className="bg-surface border border-white/5 rounded-2xl p-8 sticky top-24">
               <h4 className="text-sm font-bold text-primary uppercase tracking-widest mb-8">Detalles del proyecto</h4>
               <div className="space-y-8">
-                <div>
+                {/* <div>
                   <p className="text-[10px] text-slate-500 uppercase font-bold mb-2 tracking-widest">Ubicación</p>
                   <div className="flex items-center gap-2 text-white">
                     <span className="material-symbols-outlined text-lg text-primary/60">location_on</span>
                     <p className="text-sm font-medium">{project.location}</p>
                   </div>
-                </div>
+                </div> */}
                 <div>
                   <p className="text-[10px] text-slate-500 uppercase font-bold mb-2 tracking-widest">Sector</p>
                   <div className="flex items-center gap-2 text-white">

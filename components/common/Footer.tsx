@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
 
 export default function Footer() {
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-background-dark border-t border-white/5 pt-24 pb-12">
       <div className="max-w-screen-2xl mx-auto px-6">
@@ -39,7 +44,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-6">
-          <p className="text-xs text-slate-600">© 2024 DSN Empresas. Todos los derechos reservados.</p>
+          <p className="text-xs text-slate-600">© {currentYear} DSN Empresas. Todos los derechos reservados.</p>
           <div className="flex gap-8 text-xs text-slate-600">
             <a className="hover:text-slate-400" href="#">Privacidad</a>
             <a className="hover:text-slate-400" href="#">Términos Técnicos</a>

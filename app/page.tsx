@@ -60,7 +60,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <motion.div
             {...fadeIn}
-            className="relative bg-surface border border-white/10 rounded-3xl p-5 md:p-24 overflow-hidden text-center"
+            className="relative bg-slate-800 border border-white/10 rounded-3xl p-5 md:p-24 overflow-hidden text-center"
           >
             <div className="absolute inset-0 hero-mesh opacity-20"></div>
             <div className="relative z-10 flex flex-col justify-center">
@@ -68,10 +68,18 @@ export default function Home() {
                 De la ingeniería a la operación,<br /><span className="text-primary">con evidencia y garantía.</span>
               </h2>
               <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12 font-light">
-                Estamos listos para su próximo desafío de alta disponibilidad. Nuestro equipo técnico responderá en menos de 24 horas.
+                Experiencia comprobada para entregar tu proyecto listo para operar, con alta disponibilidad, trazabilidad y garantía.
               </p>
-              <Link href="/contacto" className="flex justify-center m-auto bg-primary hover:bg-primary/90 text-white px-5 py-2 md:px-10 md:py-5 rounded-xl font-bold md:text-lg shadow-2xl shadow-primary/20 transition-all hover:scale-105">
+              {/* <Link href="/contacto" className="flex justify-center m-auto bg-primary hover:bg-primary/90 text-white px-5 py-2 md:px-10 md:py-5 rounded-xl font-bold md:text-lg shadow-2xl shadow-primary/20 transition-all hover:scale-105">
                 <span>Agendar consulta técnica gratuita</span>
+              </Link> */}
+              <Link href="/contacto" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-lg bg-primary px-6 font-medium text-neutral-200 mx-auto hover:bg-primary/90">
+                <span>Agendar consulta técnica gratuita</span>
+                <div className="ml-1 transition group-hover:translate-x-1 flex">
+                  <span className="material-symbols-outlined">
+                    arrow_forward
+                  </span>
+                </div>
               </Link>
             </div>
           </motion.div>

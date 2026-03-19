@@ -10,10 +10,11 @@ const fadeIn = {
 };
 
 const items = [
-  { icon: 'branding_watermark', title: 'Identidad de Marca', desc: 'Manuales de marca industriales' },
-  { icon: 'web', title: 'Sitios Comerciales', desc: 'Performance y conversión B2B' },
-  { icon: 'campaign', title: 'Campañas Digitales', desc: 'Ads segmentados por industria' },
-  { icon: 'auto_mode', title: 'Automatización', desc: 'CRM e Inbound para técnicos' },
+  {
+    icon: 'branding_watermark', title: 'Identidad de Marca', desc: 'Branding y posicionamiento.' },
+  { icon: 'web', title: 'Sitios Comerciales', desc: 'Sitios web comerciales y landings.' },
+  { icon: 'campaign', title: 'Campañas Digitales', desc: 'Campañas (Meta/Google) + reporting.' },
+  { icon: 'auto_mode', title: 'Automatización', desc: 'Formularios, CRM, embudos y seguimiento.' },
 ];
 
 const MarketingAndBranding = () => {
@@ -52,8 +53,9 @@ const MarketingAndBranding = () => {
     <section className="py-24">
       <div className="max-w-screen-2xl mx-auto px-6">
         <motion.div {...fadeIn} className="text-center mb-16">
-          <h2 className="mb-4 tracking-tight text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Marketing &amp; Branding Técnico</h2>
-          <p className="text-slate-400 text-xl mb-8">Comunicación estratégica para empresas de ingeniería y tecnología que necesitan hablar el mismo idioma que sus clientes.</p>
+          <p className='text-primary font-bold uppercase tracking-widest text-sm mb-4'>Marketing &amp; Branding Técnico</p>
+          <h2 className="mb-4 tracking-tight text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Estrategia, contenido y performance con foco en resultados</h2>
+          <p className="text-slate-400 text-xl mb-8">Estrategia y producción orientada a resultados, integrando marca, performance y automatización comercial.</p>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">

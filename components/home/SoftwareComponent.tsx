@@ -20,8 +20,9 @@ export const SoftwareComponent = () => {
             {...fadeIn}
             className="max-w-4xl"
           >
-            <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Product Ecosystem</p>
-            <h2 className="tracking-tight text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent">Plataformas confiables, escalables y seguras.</h2>
+            <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Software</p>
+            <h2 className="tracking-tight text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6">Plataformas confiables, escalables y seguras.</h2>
+            <p className='text-xl text-slate-400'>Construimos plataformas API-first listas para escalar, con arquitecturas modulares, prácticas DevOps/CI/CD, observabilidad y seguridad por diseño para operación continua.</p>
           </motion.div>
           {/* <motion.button 
           {...fadeIn}
@@ -51,7 +52,7 @@ export const SoftwareComponent = () => {
                 </div>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Suite Border</h3>
-              <p className="text-slate-400 mb-8 leading-relaxed">Gestión avanzada de perímetros y control de acceso industrial con integración en tiempo real y biometría.</p>
+              <p className="text-slate-400 mb-8 leading-relaxed">Plataforma integral para control migratorio, accesos y gestión de trámites, diseñada para entornos empresariales, industriales y gubernamentales.</p>
               <div className="flex flex-wrap gap-3">
                 <span className="text-xs font-semibold px-3 py-1 bg-white/15 rounded-full text-slate-300">Control de Activos</span>
                 <span className="text-xs font-semibold px-3 py-1 bg-white/15 rounded-full text-slate-300">Monitoreo IoT</span>
@@ -66,14 +67,14 @@ export const SoftwareComponent = () => {
             className="bg-slate-800 border border-white/10 rounded-2xl overflow-hidden group">
             <div className="p-10">
               <div className="flex items-center justify-between mb-8">
-                <span className="bg-pink-400/20 text-pink-400 px-4 py-1 rounded text-xs font-bold uppercase tracking-widest">E-Gov Solution</span>
+                <span className="bg-pink-400/20 text-pink-400 px-4 py-1 rounded text-xs font-bold uppercase tracking-widest">Gestión + e-commerce</span>
                 <div className="flex gap-2">
                   <span className="px-2 py-1 bg-white/15 border border-white/10 rounded text-[10px] text-slate-200">POSTGRES</span>
                   <span className="px-2 py-1 bg-white/15 border border-white/10 rounded text-[10px] text-slate-200">NEXT.JS</span>
                 </div>
               </div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Catálogo Digital</h3>
-              <p className="text-slate-400 mb-8 leading-relaxed">Plataforma centralizada para la administración de activos digitales y servicios gubernamentales ciudadanos.</p>
+              <p className="text-slate-400 mb-8 leading-relaxed">Plataforma con dashboard para productos/servicios, presupuestos, stock e integración a ERP mediante API y vistas de base de datos.</p>
               <div className="flex flex-wrap gap-3">
                 <span className="text-xs font-semibold px-3 py-1 bg-white/15 rounded-full text-slate-300">Gestión Documental</span>
                 <span className="text-xs font-semibold px-3 py-1 bg-white/15 rounded-full text-slate-300">API Gateway</span>
@@ -88,14 +89,14 @@ export const SoftwareComponent = () => {
               key={i}
               {...fadeIn}
               transition={{ delay: 0.3 + i * 0.1 }}
-              whileHover={{ y: -5, backgroundColor: "rgba(18, 24, 38, 0.6)" }}
+              whileHover={{ y: -5 }}
               className="bg-slate-800/50 border border-white/5 p-8 rounded-xl cursor-default"
             >
-              <h4 className="font-bold text-xl mb-3">{['Micrositios', 'ERP en la nube', 'Desarrollo a medida'][i]}</h4>
+              <h4 className="font-bold text-xl mb-3">{['Micrositios', 'Sistemas de Planificación de recursos Empresariales (ERP)', 'Desarrollo a medida'][i]}</h4>
               <p className="text-sm text-slate-500 mb-4">{[
-                'Despliegue rápido de infraestructuras web para campañas y eventos de alto tráfico.',
-                'Gestión de recursos empresariales modularizada para pymes y grandes corporaciones.',
-                'Arquitecturas de software personalizadas para desafíos técnicos complejos.'
+                'Sitios profesionales en tiempo récord con plataforma de desarrollo rápido e IA generativa para creación de contenido y estructura comercial.',
+                '100% en la nube con desarrollo puntual de aplicaciones.',
+                'Sistemas a medida para operación crítica: integraciones, tableros de comando, sistemas de soporte de decisiones (DSS), Data Warehouse empresarial (EDW), automatización, trazabilidad y workflows. Data Lakehouse / Data Lake: estructura de DW y flexibilidad/volumen en la nube.'
               ][i]}</p>
               <span className="text-primary text-xs font-bold uppercase">{['Escalabilidad Automática', 'SaaS Multi-tenant', 'Full-Stack Engineering'][i]}</span>
             </motion.div>
