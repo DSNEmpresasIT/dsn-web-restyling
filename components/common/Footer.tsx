@@ -15,7 +15,7 @@ export default function Footer() {
               <div className="bg-primary p-1.5 rounded">
                 <span className="material-symbols-outlined text-white text-xl">account_tree</span>
               </div>
-              <span className="text-xl font-black tracking-tight uppercase">DSN <span className="text-primary/80">Empresas</span></span>
+              <span className="text-xl font-black tracking-tight uppercase">DSN<span className="text-primary/80">Empresas</span></span>
             </div>
             <p className="text-slate-500 text-sm leading-relaxed mb-6">Proporcionando excelencia técnica en software e infraestructura desde Concordia, Argentina para toda la región.</p>
           </div>

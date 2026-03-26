@@ -59,7 +59,7 @@ export default function Navbar() {
             <Link href="/" className={`text-sm font-medium hover:text-primary transition-colors ${pathname === '/' ? 'text-primary' : ''}`}>Inicio</Link>
             <Link href="/proyectos" className={`text-sm font-medium hover:text-primary transition-colors ${pathname.startsWith('/proyectos') ? 'text-primary' : ''}`}>Proyectos</Link>
             <Link href="/contacto" className={`text-sm font-medium hover:text-primary transition-colors ${pathname === '/contacto' ? 'text-primary' : ''}`}>Contacto</Link>
-            <Link href="/dashboard-ecommerce" className="group relative inline-flex h-12 items-center justify-center overflow-hidden bg-primary duration-500 hover:bg-primary/90 text-white px-5 py-2.5 rounded-lg text-sm font-bold transition-all">
+            <Link href="/dashboard-ecommerce" className="group relative inline-flex h-12 items-center justify-center overflow-hidden bg-primary duration-500 hover:bg-primary/90 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all">
               <div className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">Acceso Clientes</div>
               <div className="absolute translate-x-[150%] opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100 flex">
                 <span className="material-symbols-outlined">

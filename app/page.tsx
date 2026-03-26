@@ -73,7 +73,7 @@ export default function Home() {
               {/* <Link href="/contacto" className="flex justify-center m-auto bg-primary hover:bg-primary/90 text-white px-5 py-2 md:px-10 md:py-5 rounded-xl font-bold md:text-lg shadow-2xl shadow-primary/20 transition-all hover:scale-105">
                 <span>Agendar consulta técnica gratuita</span>
               </Link> */}
-              <Link href="/contacto" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-lg bg-primary px-6 font-medium text-neutral-200 mx-auto hover:bg-primary/90">
+              <Link href="/contacto" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-primary px-6 font-medium text-neutral-200 mx-auto hover:bg-primary/90">
                 <span>Agendar consulta técnica gratuita</span>
                 <div className="ml-1 transition group-hover:translate-x-1 flex">
                   <span className="material-symbols-outlined">

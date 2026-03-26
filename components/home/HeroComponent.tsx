@@ -24,16 +24,16 @@ const HeroComponent = () => {
                 Coordinemos una reunión técnica
                 <span className="material-symbols-outlined text-lg">arrow_forward</span>
               </Link> */}
-            <Link href="/contacto" className="group border border-white/10 relative inline-flex rounded-lg items-center justify-center bg-white/5 py-4 pl-8 pr-14 font-medium text-neutral-50">
+            <Link href="/contacto" className="group border border-white/10 relative inline-flex rounded-full items-center justify-center bg-white/5 py-4 pl-8 pr-14 font-medium text-neutral-50">
               <span className="z-10 pr-2 group-hover:text-gray-900 transition-colors duration-200">Coordinemos una reunión técnica</span>
-              <div className="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-lg bg-white text-gray-900 transition-[width] group-hover:w-[calc(100%-8px)]"><div className="mr-3.5 flex items-center justify-center">
+              <div className="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-white text-gray-900 transition-[width] group-hover:w-[calc(100%-8px)]"><div className="mr-3.5 flex items-center justify-center">
                 <span className="material-symbols-outlined">
                   arrow_forward
                 </span>
               </div>
               </div>
             </Link>
-            <Link href="/proyectos" className="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-lg font-bold transition-all">
+            <Link href="/proyectos" className="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-full font-bold transition-all">
               Ver capacidades
             </Link>
           </div>
