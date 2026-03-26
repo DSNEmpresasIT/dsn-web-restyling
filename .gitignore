@@ -26,3 +26,4 @@ dist-ssr
 out
 coverage
 .cache
+.env

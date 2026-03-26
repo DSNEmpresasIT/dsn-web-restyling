@@ -1,6 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { mailerService, Email, DEFAULT_MAIL_RECIPIENT } from '@/lib/mailer';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -10,6 +12,44 @@ const fadeIn = {
 };
 
 export default function ContactContent() {
+  const [formValues, setFormValues] = useState({
+    fullName: '',
+    email: '',
+    message: ''
+  });
+  const [selectedMotive, setSelectedMotive] = useState('Proyecto de Software');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    await onSubmit(formValues);
+    setIsSubmitting(false);
+  };
+
+  const onSubmit = async (data: typeof formValues) => {
+    try {
+      // const sendTo = DEFAULT_MAIL_RECIPIENT;
+      const payload: Email = {
+        fullName: data.fullName,
+        from: data.email,
+        subject: `${selectedMotive} - ${data.fullName}`,
+        message: `Enviado a través del formulario de contacto de DSN WEB.<br/>
+                  Motivo: ${selectedMotive}<br/><br/>
+                  Contenido del mensaje: ${data.message.replace(/\n/g, "<br/>")}`,
+        sendTo: DEFAULT_MAIL_RECIPIENT!
+      };
+
+      await mailerService.sendEmail(payload);
+      alert("¡Mensaje enviado con éxito!");
+      setFormValues({ fullName: '', email: '', message: '' });
+      
+    } catch (error) {
+      console.error("Error al enviar:", error);
+      alert("Hubo un problema al enviar el mensaje. Intente nuevamente.");
+    }
+  };
+
   return (
     <div className="bg-background-dark min-h-screen">
       <section className="relative py-16 md:py-24 overflow-hidden border-b border-white/5">
@@ -46,11 +86,14 @@ export default function ContactContent() {
         >
           <div className="bg-surface border border-white/5 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-sm">
             <div className="p-8 md:p-12">
-              <form className="space-y-10">
+              <form onSubmit={handleSubmit} className="space-y-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-slate-400">Nombre / Empresa</label>
                     <input 
+                      required
+                      value={formValues.fullName}
+                      onChange={(e) => setFormValues({ ...formValues, fullName: e.target.value })}
                       className="w-full px-0 py-3 bg-transparent border-0 border-b border-slate-700 focus:ring-0 focus:border-primary transition-all outline-none text-white placeholder:text-slate-600" 
                       placeholder="Ej: Juan Pérez - TechCorp" 
                       type="text"
@@ -59,20 +102,25 @@ export default function ContactContent() {
                   <div className="space-y-2">
                     <label className="text-sm font-bold text-slate-400">Email Corporativo</label>
                     <input 
+                      required
+                      value={formValues.email}
+                      onChange={(e) => setFormValues({ ...formValues, email: e.target.value })}
                       className="w-full px-0 py-3 bg-transparent border-0 border-b border-slate-700 focus:ring-0 focus:border-primary transition-all outline-none text-white placeholder:text-slate-600" 
                       placeholder="nombre@empresa.com" 
                       type="email"
                     />
                   </div>
                 </div>
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <label className="text-sm font-bold text-slate-400">Teléfono / WhatsApp</label>
                   <input 
+                    value={formValues.phone}
+                    onChange={(e) => setFormValues({ ...formValues, phone: e.target.value })}
                     className="w-full px-0 py-3 bg-transparent border-0 border-b border-slate-700 focus:ring-0 focus:border-primary transition-all outline-none text-white placeholder:text-slate-600" 
                     placeholder="+54 9 345 000 0000" 
                     type="tel"
                   />
-                </div>
+                </div> */}
                 <div className="space-y-4">
                   <label className="text-sm font-bold text-slate-400 uppercase tracking-widest">¿Sobre qué querés hablar?</label>
                   <div className="flex flex-wrap gap-3">
@@ -80,7 +128,8 @@ export default function ContactContent() {
                       <button 
                         key={i}
                         type="button"
-                        className="px-4 py-2 rounded-full border border-slate-700 text-sm font-medium hover:border-primary hover:text-primary transition-all"
+                        onClick={() => setSelectedMotive(topic)}
+                        className={`px-4 py-2 rounded-full border text-sm font-medium transition-all ${selectedMotive === topic ? 'border-primary text-primary bg-primary/10' : 'border-slate-700 hover:border-primary hover:text-primary'}`}
                       >
                         {topic}
                       </button>
@@ -90,6 +139,9 @@ export default function ContactContent() {
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-slate-400">Mensaje</label>
                   <textarea 
+                    required
+                    value={formValues.message}
+                    onChange={(e) => setFormValues({ ...formValues, message: e.target.value })}
                     className="w-full px-4 py-3 bg-slate-800/30 border border-slate-700 rounded-lg focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-white placeholder:text-slate-600 resize-none" 
                     placeholder="Contanos más detalles sobre tu proyecto..." 
                     rows={4}
@@ -99,9 +151,10 @@ export default function ContactContent() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-full transition-all shadow-lg shadow-primary/20"
+                  disabled={isSubmitting}
+                  className={`w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-full transition-all shadow-lg shadow-primary/20 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
-                  Solicitar reunión técnica
+                  {isSubmitting ? 'Enviando...' : 'Solicitar reunión técnica'}
                 </motion.button>
               </form>
             </div>
