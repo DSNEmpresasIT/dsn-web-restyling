@@ -29,7 +29,6 @@ export default function ContactContent() {
 
   const onSubmit = async (data: typeof formValues) => {
     try {
-      // const sendTo = DEFAULT_MAIL_RECIPIENT;
       const payload: Email = {
         fullName: data.fullName,
         from: data.email,
