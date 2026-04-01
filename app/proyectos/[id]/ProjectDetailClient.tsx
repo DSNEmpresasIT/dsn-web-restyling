@@ -29,19 +29,22 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="relative mb-20 rounded-3xl overflow-hidden group shadow-2xl"
+          className={`${!project.image && 'border border-white/5'} relative mb-20 rounded-3xl overflow-hidden group bg-surface shadow-2xl`}
         >
-          <div className="aspect-[21/9] w-full">
-            <Image 
-              className="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 transition-transform duration-1000" 
-              src={project.image} 
-              alt={project.title}
-              width={1200}
-              height={500}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent" />
-          </div>
-          <div className="absolute bottom-0 left-0 p-8 md:p-16 w-full">
+          {
+            project.image &&
+            <div className="aspect-[21/9] w-full">
+              <Image 
+                className="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 transition-transform duration-1000" 
+                src={project.image}
+                alt={project.title}
+                width={1200}
+                height={500}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/40 to-transparent" />
+            </div>
+          }
+          <div className={`${project.image && 'absolute'} bottom-0 left-0 p-8 md:p-16 w-full`}>
             <motion.span 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -58,14 +61,6 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
             >
               {project.title}
             </motion.h1>
-            {/* <motion.p 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="text-slate-300 text-lg max-w-2xl font-light"
-            >
-              {project.description}
-            </motion.p> */}
           </div>
         </motion.div>
 
@@ -149,14 +144,14 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
                   <p className="text-[10px] text-slate-500 uppercase font-bold mb-2 tracking-widest">Sector</p>
                   <div className="flex items-center gap-2 text-white">
                     <span className="material-symbols-outlined text-lg text-primary/60">hub</span>
-                    <p className="text-sm font-medium">{project.sector || 'Ingeniería & Tecnología'}</p>
+                    <p className="text-sm font-medium">{project.category || 'Ingeniería & Tecnología'}</p>
                   </div>
                 </div>
                 <div>
                   <p className="text-[10px] text-slate-500 uppercase font-bold mb-2 tracking-widest">Año de Ejecución</p>
                   <div className="flex items-center gap-2 text-white">
                     <span className="material-symbols-outlined text-lg text-primary/60">calendar_today</span>
-                    <p className="text-sm font-medium">{project.year || '2022'}</p>
+                    <p className="text-sm font-medium">{project.year || '-'}</p>
                   </div>
                 </div>
                 <div>

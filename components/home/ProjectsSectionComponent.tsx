@@ -1,7 +1,7 @@
-import { PROJECTS } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { getProjectById } from '@/lib/projects';
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -12,6 +12,11 @@ const fadeIn = {
 
 const ProjectsSection = () => {
 
+  const FEATURED_PROJECTS = [
+    getProjectById("aeropuerto-comodoro-pierrestegui"),
+    getProjectById("edificio-panorama-xxi")
+  ];
+
   return (
     <section className="py-24" id="proyectos">
       <div className="max-w-7xl mx-auto px-6">
@@ -21,7 +26,7 @@ const ProjectsSection = () => {
           <div className="h-px bg-white/10 flex-1"></div>
         </motion.div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {PROJECTS.slice(0, 2).map((p, i) => (
+          {FEATURED_PROJECTS.map((p, i) => (
             <motion.div
               key={i}
               {...fadeIn}
@@ -43,7 +48,7 @@ const ProjectsSection = () => {
                   <div>
                     <p className="text-primary text-xs font-bold uppercase tracking-widest mb-2">{p.category}</p>
                     <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">{p.title}</h3>
-                    <p className="text-slate-400 mt-2">{p.description}</p>
+                    <p className="text-slate-400 mt-2 line-clamp-3">{p.description}</p>
                   </div>
                   <span className="material-symbols-outlined text-3xl opacity-0 group-hover:opacity-100 transition-opacity">open_in_new</span>
                 </div>
