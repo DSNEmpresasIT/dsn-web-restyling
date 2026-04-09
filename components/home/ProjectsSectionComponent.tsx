@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion, scale } from 'framer-motion';
 import { getProjectById } from '@/lib/projects';
 
 const fadeIn = {
@@ -9,6 +9,13 @@ const fadeIn = {
   viewport: { once: true },
   transition: { duration: 0.6 }
 };
+
+const zoomout = {
+  initial: { opacity: 0, y: 20, scale: 3 },
+  whileInView: { opacity: 1, y: 0, scale: 1 },
+  viewport: { once: true },
+  transition: { duration: 0.6 }
+}
 
 const ProjectsSection = () => {
 
@@ -20,9 +27,9 @@ const ProjectsSection = () => {
   return (
     <section className="py-24" id="proyectos">
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div {...fadeIn} className="flex items-center gap-4 mb-16">
+        <motion.div {...zoomout} className="flex items-center gap-4 mb-16">
           <div className="h-px bg-white/10 flex-1"></div>
-          <h2 className="mb-4 tracking-tight text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Casos de Éxito</h2>
+          <h2 className="mb-4 tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Casos de Éxito</h2>
           <div className="h-px bg-white/10 flex-1"></div>
         </motion.div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

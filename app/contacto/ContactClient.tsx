@@ -40,12 +40,10 @@ export default function ContactContent() {
       };
 
       await mailerService.sendEmail(payload);
-      alert("¡Mensaje enviado con éxito!");
       setFormValues({ fullName: '', email: '', message: '' });
       
     } catch (error) {
       console.error("Error al enviar:", error);
-      alert("Hubo un problema al enviar el mensaje. Intente nuevamente.");
     }
   };
 
@@ -61,7 +59,7 @@ export default function ContactContent() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className='text-5xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 leading-tight tracking-tighter uppercase max-w-[700px] m-auto'
+            className='text-5xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 leading-tight tracking-tighter max-w-[700px] m-auto'
           >
             Coordinemos una reunión técnica
           </motion.h1>
@@ -88,23 +86,23 @@ export default function ContactContent() {
               <form onSubmit={handleSubmit} className="space-y-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-400">Nombre / Empresa</label>
+                    <label className="font-bold text-slate-200">Nombre / Empresa</label>
                     <input 
                       required
                       value={formValues.fullName}
                       onChange={(e) => setFormValues({ ...formValues, fullName: e.target.value })}
-                      className="w-full px-0 py-3 bg-transparent border-0 border-b border-slate-700 focus:ring-0 focus:border-primary transition-all outline-none text-white placeholder:text-slate-600" 
+                      className="w-full px-0 py-3 bg-transparent border-0 border-b border-slate-700 focus:ring-0 focus:border-primary transition-all outline-none text-salte-400 placeholder:text-slate-400" 
                       placeholder="Ej: Juan Pérez - TechCorp" 
                       type="text"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-slate-400">Email Corporativo</label>
+                    <label className="font-bold text-slate-200">Email Corporativo</label>
                     <input 
                       required
                       value={formValues.email}
                       onChange={(e) => setFormValues({ ...formValues, email: e.target.value })}
-                      className="w-full px-0 py-3 bg-transparent border-0 border-b border-slate-700 focus:ring-0 focus:border-primary transition-all outline-none text-white placeholder:text-slate-600" 
+                      className="w-full px-0 py-3 bg-transparent border-0 border-b border-slate-700 focus:ring-0 focus:border-primary transition-all outline-none text-white placeholder:text-slate-400" 
                       placeholder="nombre@empresa.com" 
                       type="email"
                     />
@@ -121,7 +119,7 @@ export default function ContactContent() {
                   />
                 </div> */}
                 <div className="space-y-4">
-                  <label className="text-sm font-bold text-slate-400 uppercase tracking-widest">¿Sobre qué querés hablar?</label>
+                  <label className="font-bold text-slate-200">¿Sobre qué querés hablar?</label>
                   <div className="flex flex-wrap gap-3">
                     {['Proyecto de Software', 'Infraestructura Crítica', 'Obras', 'BIM', 'Otro'].map((topic, i) => (
                       <button 
@@ -136,12 +134,12 @@ export default function ContactContent() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-400">Mensaje</label>
+                  <label className="font-bold text-slate-200">Mensaje</label>
                   <textarea 
                     required
                     value={formValues.message}
                     onChange={(e) => setFormValues({ ...formValues, message: e.target.value })}
-                    className="w-full px-4 py-3 bg-slate-800/30 border border-slate-700 rounded-lg focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-white placeholder:text-slate-600 resize-none" 
+                    className="w-full px-4 py-3 bg-slate-800/30 border border-slate-700 rounded-lg focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none text-white placeholder:text-slate-400 resize-none" 
                     placeholder="Contanos más detalles sobre tu proyecto..." 
                     rows={4}
                   />
@@ -165,8 +163,8 @@ export default function ContactContent() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: 'mail', title: 'Email', value: 'contacto@dsnempresas.com' },
-              { icon: 'call', title: 'Teléfono', value: '+54 345 421-XXXX' },
+              { icon: 'mail', title: 'Email', value: DEFAULT_MAIL_RECIPIENT },
+              { icon: 'call', title: 'Teléfono', value: '+54 9 3454011406' },
               { icon: 'location_on', title: 'Ubicación', value: 'Concordia, Entre Ríos' }
             ].map((item, i) => (
               <motion.div 

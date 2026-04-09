@@ -21,7 +21,7 @@ export const SoftwareComponent = () => {
             className="max-w-4xl"
           >
             <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Software</p>
-            <h2 className="tracking-tight text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6">Plataformas confiables, escalables y seguras.</h2>
+            <h2 className="tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3">Plataformas confiables, escalables y seguras.</h2>
             <p className='text-xl text-slate-400'>Construimos plataformas API-first listas para escalar, con arquitecturas modulares, prácticas DevOps/CI/CD, observabilidad y seguridad por diseño para operación continua.</p>
           </motion.div>
           {/* <motion.button 
@@ -92,8 +92,8 @@ export const SoftwareComponent = () => {
               whileHover={{ y: -5 }}
               className="bg-slate-800/50 border border-white/5 p-8 rounded-xl cursor-default"
             >
-              <h4 className="font-bold text-xl mb-3">{['Micrositios', 'Sistemas de Planificación de recursos Empresariales (ERP)', 'Desarrollo a medida'][i]}</h4>
-              <p className="text-sm text-slate-500 mb-4">{[
+              <h4 className="text-2xl md:text-3xl font-bold mb-4">{['Micrositios', 'Sistemas de Planificación de recursos Empresariales (ERP)', 'Desarrollo a medida'][i]}</h4>
+              <p className="text-slate-400 leading-relaxed mb-4">{[
                 'Sitios profesionales en tiempo récord con plataforma de desarrollo rápido e IA generativa para creación de contenido y estructura comercial.',
                 '100% en la nube con desarrollo puntual de aplicaciones.',
                 'Sistemas a medida para operación crítica: integraciones, tableros de comando, sistemas de soporte de decisiones (DSS), Data Warehouse empresarial (EDW), automatización, trazabilidad y workflows. Data Lakehouse / Data Lake: estructura de DW y flexibilidad/volumen en la nube.'

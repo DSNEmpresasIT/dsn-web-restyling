@@ -54,7 +54,7 @@ const MarketingAndBranding = () => {
       <div className="max-w-screen-2xl mx-auto px-6">
         <motion.div {...fadeIn} className="text-center mb-16">
           <p className='text-primary font-bold uppercase tracking-widest text-sm mb-4'>Marketing &amp; Branding Técnico</p>
-          <h2 className="mb-4 tracking-tight text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Estrategia, contenido y performance con foco en resultados</h2>
+          <h2 className="mb-4 tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Estrategia, contenido y performance con foco en resultados</h2>
           <p className="text-slate-400 text-xl mb-8">Estrategia y producción orientada a resultados, integrando marca, performance y automatización comercial.</p>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>

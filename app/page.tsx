@@ -62,12 +62,13 @@ export default function Home() {
             {...fadeIn}
             className="relative bg-slate-800 border border-white/10 rounded-3xl p-5 md:p-24 overflow-hidden text-center"
           >
-            <div className="absolute inset-0 hero-mesh opacity-20"></div>
+            <div className="w-1/2 h-1/2 absolute bottom-0 left-1/2 -translate-x-1/2 rotate-[-45deg] contact-cta-gradient"></div>
+            <div className="absolute inset-0 hero-mesh backdrop-blur-[150px]"></div>
             <div className="relative z-10 flex flex-col justify-center">
-              <h2 className="text-3xl md:text-7xl font-semibold uppercase mb-8 leading-tight tracking-tighter">
+              <h2 className="text-3xl md:text-7xl font-semibold mb-8 leading-tight tracking-tighter">
                 De la ingeniería a la operación,<br /><span className="text-primary">con evidencia y garantía.</span>
               </h2>
-              <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12 font-light">
+              <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-12 font-light">
                 Experiencia comprobada para entregar tu proyecto listo para operar, con alta disponibilidad, trazabilidad y garantía.
               </p>
               {/* <Link href="/contacto" className="flex justify-center m-auto bg-primary hover:bg-primary/90 text-white px-5 py-2 md:px-10 md:py-5 rounded-xl font-bold md:text-lg shadow-2xl shadow-primary/20 transition-all hover:scale-105">

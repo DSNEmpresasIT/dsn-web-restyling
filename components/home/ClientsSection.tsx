@@ -68,11 +68,11 @@ const ClientsSection = () => {
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.05 }}
-                  className={`${styles.gradientContainer} ${styles.innerShadow} max-w-44 md:max-w-64 w-full aspect-square rounded-full text-center flex flex-col items-center justify-center text-slate-200 border border-slate-400/50 font-black text-xs md:text-base italic tracking-widest uppercase p-5`}
+                  className={`${styles.gradientContainer} ${styles.innerShadow} max-w-44 md:max-w-64 w-full aspect-square rounded-full text-center flex flex-col items-center justify-center text-slate-200 border border-slate-400/50 font-black text-xs md:text-base tracking-widest uppercase p-5`}
                 >
                   <span>{org.title}</span>
                   {
-                    org.sub && <span className='text-xs text-slate-400'>{org.sub}</span>
+                    org.sub && <span className='text-xs text-pink-400'>{org.sub}</span>
                   }
                 </motion.div>
               ))}

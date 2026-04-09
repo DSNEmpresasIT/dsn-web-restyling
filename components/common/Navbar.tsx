@@ -56,9 +56,27 @@ export default function Navbar() {
             </span>
           </button>
           <div className="hidden md:flex items-center gap-10 uppercase">
-            <Link href="/" className={`text-sm font-medium hover:text-primary transition-colors ${pathname === '/' ? 'text-primary' : ''}`}>Inicio</Link>
+            <ul className='flex gap-10 text-sm'>
+              <li>
+                <Link href="/" className={`${pathname === '/' ? 'text-primary' : ''} group relative inline-flex items-center justify-center overflow-hidden font-medium duration-500`}><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Inicio</div><div className="absolute translate-y-[150%] transition group-hover:text-primary group-hover:translate-y-0">Inicio</div></Link>
+              </li>
+              <li>
+                <Link href="/proyectos" className={`${pathname.startsWith('/proyectos') ? 'text-primary' : ''} group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500`}><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Proyectos</div><div className="absolute translate-y-[150%] transition group-hover:text-primary group-hover:translate-y-0">Proyectos</div></Link>
+              </li>
+              <li>
+                <Link href="/contacto" className={`${pathname === '/contacto' ? 'text-primary' : ''} group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500`}><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Contacto</div><div className="absolute translate-y-[150%] transition group-hover:text-primary group-hover:translate-y-0">Contacto</div></Link>
+              </li>
+            </ul>
+
+
+
+            {/* <Link href="/" className={`text-sm font-medium hover:text-primary transition-colors ${pathname === '/' ? 'text-primary' : ''}`}>Inicio</Link>
+
             <Link href="/proyectos" className={`text-sm font-medium hover:text-primary transition-colors ${pathname.startsWith('/proyectos') ? 'text-primary' : ''}`}>Proyectos</Link>
-            <Link href="/contacto" className={`text-sm font-medium hover:text-primary transition-colors ${pathname === '/contacto' ? 'text-primary' : ''}`}>Contacto</Link>
+
+            <Link href="/contacto" className={`text-sm font-medium hover:text-primary transition-colors ${pathname === '/contacto' ? 'text-primary' : ''}`}>Contacto</Link> */}
+
+
             <Link href="/dashboard-ecommerce" className="group relative inline-flex h-12 items-center justify-center overflow-hidden bg-primary duration-500 hover:bg-primary/90 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all">
               <div className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">Acceso Clientes</div>
               <div className="absolute translate-x-[150%] opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100 flex">

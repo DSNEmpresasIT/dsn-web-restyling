@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { DEFAULT_MAIL_RECIPIENT } from '@/lib/mailer';
 
 export default function Footer() {
 
@@ -9,45 +10,57 @@ export default function Footer() {
   return (
     <footer className="bg-background-dark border-t border-white/5 pt-24 pb-12">
       <div className="max-w-screen-2xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mb-24">
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <div className="bg-primary p-1.5 rounded">
+              <div className="bg-primary p-1.5 rounded flex">
                 <span className="material-symbols-outlined text-white text-xl">account_tree</span>
               </div>
-              <span className="text-xl font-black tracking-tight uppercase">DSN<span className="text-primary/80">Empresas</span></span>
+              <span className="text-3xl font-black tracking-tight uppercase">DSN<span className="text-primary/80">Empresas</span></span>
             </div>
-            <p className="text-slate-500 text-sm leading-relaxed mb-6">Proporcionando excelencia técnica en software e infraestructura desde Concordia, Argentina para toda la región.</p>
+            <p className="text-slate-400 text-xl leading-relaxed mb-6 text-pretty">Proporcionando excelencia técnica en software e infraestructura desde Concordia, Argentina para toda la región.</p>
+            <div className='pt-5'>
+              <h6 className="font-bold mb-6 uppercase text-xl tracking-widest text-slate-200">Contacto</h6>
+              <ul className="space-y-4 text-xl text-slate-400">
+                <li className="flex gap-3"><span className="material-symbols-outlined text-primary text-xl">location_on</span> Concordia, Entre Ríos</li>
+                <li className="flex gap-3"><span className="material-symbols-outlined text-primary text-xl">mail</span>{DEFAULT_MAIL_RECIPIENT}</li>
+              </ul>
+            </div>
           </div>
           <div>
-            <h6 className="font-bold mb-8 uppercase text-xs tracking-widest text-slate-300">Servicios</h6>
-            <ul className="space-y-4 text-sm text-slate-500">
-              <li><Link className="hover:text-primary transition-colors" href="/proyectos">Software a Medida</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="/proyectos">Infraestructura Crítica</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="/proyectos">Ciberseguridad</Link></li>
+            <h6 className="font-bold mb-8 uppercase text-xl tracking-widest text-slate-200">Servicios</h6>
+            <ul className="space-y-4 text-xl text-slate-400">
+              <li>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Software a Medida</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Software a Medida</div></Link>
+              </li>
+              <li>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Infraestructura Crítica</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Infraestructura Crítica</div></Link>
+              </li>
+              <li>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Ciberseguridad</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Ciberseguridad</div></Link>
+              </li>
             </ul>
           </div>
           <div>
-            <h6 className="font-bold mb-8 uppercase text-xs tracking-widest text-slate-300">Empresa</h6>
-            <ul className="space-y-4 text-sm text-slate-500">
-              <li><Link className="hover:text-primary transition-colors" href="/proyectos">Sobre Nosotros</Link></li>
-              <li><Link href="/proyectos" className="hover:text-primary transition-colors">Proyectos</Link></li>
-              <li><Link className="hover:text-primary transition-colors" href="/contacto">Contacto</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h6 className="font-bold mb-8 uppercase text-xs tracking-widest text-slate-300">Contacto</h6>
-            <ul className="space-y-4 text-sm text-slate-500">
-              <li className="flex gap-3"><span className="material-symbols-outlined text-primary text-sm">location_on</span> Concordia, Entre Ríos</li>
-              <li className="flex gap-3"><span className="material-symbols-outlined text-primary text-sm">mail</span> info@dsnempresas.com.ar</li>
+            <h6 className="font-bold mb-8 uppercase text-xl tracking-widest text-slate-200">Empresa</h6>
+            <ul className="space-y-4 text-xl text-slate-400">
+              <li>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Sobre Nosotros</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Sobre Nosotros</div></Link>
+              </li>
+              <li>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Proyectos</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Proyectos</div></Link>
+              </li>
+              <li>
+                <Link href="/contacto" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Contacto</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Contacto</div></Link>
+              </li>
             </ul>
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 gap-6">
-          <p className="text-xs text-slate-600">© {currentYear} DSN Empresas. Todos los derechos reservados.</p>
-          <div className="flex gap-8 text-xs text-slate-600">
-            <a className="hover:text-slate-400" href="#">Privacidad</a>
-            <a className="hover:text-slate-400" href="#">Términos Técnicos</a>
+          <p className="text-slate-400">© {currentYear} DSN Empresas. Todos los derechos reservados.</p>
+          <div className="flex gap-8 text-slate-400">
+            <a className="hover:text-primary" href="#">Privacidad</a>
+            <a className="hover:text-primary" href="#">Términos Técnicos</a>
           </div>
         </div>
       </div>

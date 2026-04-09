@@ -48,7 +48,7 @@ export const InfraComponent = () => {
         >
           <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Infraestructura</p>
           {/* <h2 className="text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6">Infraestructura de alta exigencia, diseñada para operar sin interrupciones</h2> */}
-          <h2 className="text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6">Proyectos llave en mano para requerimientos exigentes y servicios sin interrupciones</h2>
+          <h2 className="text-4xl md:text-7xl font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3">Proyectos llave en mano para requerimientos exigentes y servicios sin interrupciones</h2>
           <p className='text-xl text-slate-400'>Ejecutamos soluciones llave en mano, con soporte y garantía postventa extendida, asegurando continuidad operativa, trazabilidad y performance en entornos críticos.</p>
           {/* <p className="text-xl text-slate-400 mb-6">Diseñamos y ejecutamos proyectos de infraestructura crítica con foco en alta disponibilidad, redundancia y cumplimiento de normas y estándares internacionales de seguridad, para entornos donde la continuidad operativa es un requisito.</p>
           <p className="text-xl text-slate-400">Nos hacemos cargo del ciclo completo: ingeniería del modelo solución, Proyecto Ejecutivo, provisión, implementación, commissioning, pruebas de aceptación y entrega documentada. Entregamos proyectos llave en mano con soporte y garantía postventa por períodos extendidos.</p> */}

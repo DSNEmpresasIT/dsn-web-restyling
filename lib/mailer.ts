@@ -23,7 +23,7 @@ class MailerService {
       const errorBody = await response.json().catch(() => ({}));
       throw new Error(errorBody.message || 'Error al procesar la solicitud de envío');
     }
-    return response.json();
+    return response;
   }
   
 }

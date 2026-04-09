@@ -64,3 +64,9 @@ dialog:-internal-dialog-in-top-layer {
 }
 
 
+.contact-cta-gradient {
+  background: #ffffff;
+  background: linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 179, 238, 0) 50%, rgba(255, 92, 217, 1) 50%, rgba(255, 92, 217, 1) 100%);
+}
+
+
