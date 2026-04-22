@@ -21,7 +21,7 @@ export const SoftwareComponent = () => {
             className="max-w-4xl"
           >
             <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Software</p>
-            <h2 className="tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3">Plataformas confiables, escalables y seguras.</h2>
+            <h2 className="tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3">Plataformas confiables, escalables y seguras.</h2>
             <p className='text-xl text-slate-400'>Construimos plataformas API-first listas para escalar, con arquitecturas modulares, prácticas DevOps/CI/CD, observabilidad y seguridad por diseño para operación continua.</p>
           </motion.div>
           {/* <motion.button 

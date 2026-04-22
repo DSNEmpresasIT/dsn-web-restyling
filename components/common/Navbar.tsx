@@ -27,7 +27,7 @@ export default function Navbar() {
           <div className='w-full flex justify-between items-center h-20 px-5'>
             <Link href="/" className="flex items-center gap-3 group">
               <span className="text-xl font-black tracking-tight uppercase">
-                <span className='group-hover:scale-110'>DSN</span><span className="text-primary/80">Empresas</span>
+                <span className='group-hover:scale-110'>DSN</span><span className="text-primary bg-gradient-to-r from-primary to-accent-violet bg-clip-text text-transparent">Empresas</span>
               </span>
             </Link>
             <button onClick={() => closeMenu()} className='flex'>
@@ -47,7 +47,7 @@ export default function Navbar() {
         <div className="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <span className="text-xl font-black tracking-tight uppercase">
-              <span className='group-hover:scale-110'>DSN</span><span className="text-primary/80">Empresas</span>
+              <span className='group-hover:scale-110'>DSN</span><span className="text-primary bg-gradient-to-r from-primary to-accent-violet bg-clip-text text-transparent">Empresas</span>
             </span>
           </Link>
           <button onClick={() => openMenu()} className='md:hidden flex'>
@@ -77,7 +77,7 @@ export default function Navbar() {
             <Link href="/contacto" className={`text-sm font-medium hover:text-primary transition-colors ${pathname === '/contacto' ? 'text-primary' : ''}`}>Contacto</Link> */}
 
 
-            <Link href="/dashboard-ecommerce" className="group relative inline-flex h-12 items-center justify-center overflow-hidden bg-primary duration-500 hover:bg-primary/90 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all">
+            <Link href="/dashboard-ecommerce" className="group relative inline-flex h-12 items-center justify-center overflow-hidden duration-500 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-primary hover:bg-primary/90 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary">
               <div className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">Acceso Clientes</div>
               <div className="absolute translate-x-[150%] opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100 flex">
                 <span className="material-symbols-outlined">

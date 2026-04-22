@@ -66,7 +66,7 @@ export default function Home() {
             <div className="absolute inset-0 hero-mesh backdrop-blur-[150px]"></div>
             <div className="relative z-10 flex flex-col justify-center">
               <h2 className="text-3xl md:text-7xl font-semibold mb-8 leading-tight tracking-tighter">
-                De la ingeniería a la operación,<br /><span className="text-primary">con evidencia y garantía.</span>
+                De la ingeniería a la operación,<br /><span className="text-primary bg-gradient-to-r from-primary to-accent-violet bg-clip-text text-transparent">con evidencia y garantía.</span>
               </h2>
               <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-12 font-light">
                 Experiencia comprobada para entregar tu proyecto listo para operar, con alta disponibilidad, trazabilidad y garantía.
@@ -74,7 +74,7 @@ export default function Home() {
               {/* <Link href="/contacto" className="flex justify-center m-auto bg-primary hover:bg-primary/90 text-white px-5 py-2 md:px-10 md:py-5 rounded-xl font-bold md:text-lg shadow-2xl shadow-primary/20 transition-all hover:scale-105">
                 <span>Agendar consulta técnica gratuita</span>
               </Link> */}
-              <Link href="/contacto" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full bg-primary px-6 font-medium text-neutral-200 mx-auto hover:bg-primary/90">
+              <Link href="/contacto" className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-full px-6 font-medium text-neutral-200 mx-auto bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary">
                 <span>Agendar consulta técnica gratuita</span>
                 <div className="ml-1 transition group-hover:translate-x-1 flex">
                   <span className="material-symbols-outlined">

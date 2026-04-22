@@ -15,7 +15,8 @@ const HeroComponent = () => {
           className="flex flex-col justify-center"
         >
           {/* <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl 2xl:text-8xl font-semibold tracking-tighter leading-none mb-6">Confianza construida en <span className="text-primary">proyectos reales</span></h1> */}
-          <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl font-semibold tracking-tighter leading-none mb-6">Soluciones de nivel global para <span className="text-primary">entornos de alta exigencia</span></h1>
+          {/* <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl font-semibold tracking-tighter leading-none mb-6">Soluciones de nivel global para <span className="text-primary">entornos de alta exigencia</span></h1> */}
+          <h1 className="uppercase text-4xl sm:text-6xl xl:text-7xl font-semibold tracking-tighter leading-none mb-6">Soluciones de nivel global para <span className="text-primary bg-gradient-to-r from-primary to-accent-violet bg-clip-text text-transparent">entornos de alta exigencia</span></h1>
           <p className="text-xl text-slate-400 max-w-lg mb-10 leading-relaxed font-light">
             Somos una Empresa Argentina especializada en diseñar, ejecutar y operar soluciones end-to-end para entornos donde no se puede fallar: aeropuertos, pasos fronterizos, industria, empresas y organismos.
           </p>
@@ -33,9 +34,9 @@ const HeroComponent = () => {
               </div>
               </div>
             </Link>
-            <Link href="/proyectos" className="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-full font-bold transition-all">
+            {/* <Link href="/proyectos" className="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-full font-bold transition-all">
               Ver capacidades
-            </Link>
+            </Link> */}
           </div>
         </motion.div>
         <motion.div

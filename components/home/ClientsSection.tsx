@@ -72,7 +72,7 @@ const ClientsSection = () => {
                 >
                   <span>{org.title}</span>
                   {
-                    org.sub && <span className='text-xs text-pink-400'>{org.sub}</span>
+                    org.sub && <span className='text-xs text-accent-violet'>{org.sub}</span>
                   }
                 </motion.div>
               ))}

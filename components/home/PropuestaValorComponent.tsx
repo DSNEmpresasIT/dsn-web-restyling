@@ -14,8 +14,8 @@ const PropuestaValorComponent = () => {
   return (
     <section className="py-24">
       <div className="max-w-screen-2xl mx-auto px-6">
-        <motion.div {...fadeIn} className="text-center mb-16">
-          <h2 className="mb-4 tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Propuesta de Valor</h2>
+        <motion.div {...fadeIn} className="flex flex-col text-center mb-16">
+          <h2 className="mx-auto mb-4 tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">Propuesta de Valor</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">

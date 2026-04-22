@@ -14,7 +14,7 @@ const config: Config = {
         'background-light': '#f5f6f8',
         'background-dark': '#080b11',
         surface: '#121826',
-        'accent-violet': '#6d28d9',
+        'accent-violet': '#6631E9',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],

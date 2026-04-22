@@ -48,7 +48,7 @@ export const InfraComponent = () => {
         >
           <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Infraestructura</p>
           {/* <h2 className="text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6">Infraestructura de alta exigencia, diseñada para operar sin interrupciones</h2> */}
-          <h2 className="text-4xl md:text-7xl font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3">Proyectos llave en mano para requerimientos exigentes y servicios sin interrupciones</h2>
+          <h2 className="text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3 ">Proyectos llave en mano para requerimientos exigentes y servicios sin interrupciones</h2>
           <p className='text-xl text-slate-400'>Ejecutamos soluciones llave en mano, con soporte y garantía postventa extendida, asegurando continuidad operativa, trazabilidad y performance en entornos críticos.</p>
           {/* <p className="text-xl text-slate-400 mb-6">Diseñamos y ejecutamos proyectos de infraestructura crítica con foco en alta disponibilidad, redundancia y cumplimiento de normas y estándares internacionales de seguridad, para entornos donde la continuidad operativa es un requisito.</p>
           <p className="text-xl text-slate-400">Nos hacemos cargo del ciclo completo: ingeniería del modelo solución, Proyecto Ejecutivo, provisión, implementación, commissioning, pruebas de aceptación y entrega documentada. Entregamos proyectos llave en mano con soporte y garantía postventa por períodos extendidos.</p> */}
@@ -71,7 +71,7 @@ export const InfraComponent = () => {
             {...fadeIn}
             transition={{ delay: 0.5 }}
             whileHover={{ scale: 1.02 }}
-            className={`bg-primary p-10 flex flex-col justify-between cursor-pointer rounded-2xl md:col-span-2 xl:col-span-1 group relative overflow-hidden`}
+            className={`p-10 flex flex-col justify-between cursor-pointer rounded-2xl md:col-span-2 xl:col-span-1 group relative overflow-hidden bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary`}
           >
             <div>
               <span className="material-symbols-outlined text-white mb-4 text-3xl">handshake</span>
@@ -79,7 +79,7 @@ export const InfraComponent = () => {
               {/* <p className="text-white/80">Coordinemos un relevamiento técnico y entregamos una propuesta ejecutiva con alcance, hitos, documentación y garantía.</p> */}
             </div>
             <Link href="/contacto" className="text-white font-bold text-7xl uppercase after:absolute after:inset-0">
-              <span className="material-symbols-outlined text-5xl group-hover:scale-125 transition-all duration-300" style={{ fontSize: '48px', color: 'white' }}>arrow_forward</span>
+              <span className="group-hover:animate-spin material-symbols-outlined text-5xl group-hover:scale-125 transition-all duration-300" style={{ fontSize: '48px', color: 'white' }}>arrow_forward</span>
             </Link>
           </motion.div>
         </div>
