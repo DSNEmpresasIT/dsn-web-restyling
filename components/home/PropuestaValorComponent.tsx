@@ -24,10 +24,10 @@ const PropuestaValorComponent = () => {
               key={i}
               {...fadeIn}
               transition={{ delay: i * 0.1 }}
-              whileHover={{ y: -5 }}
-              className="p-8 border border-white/5 bg-slate-800 rounded-xl transition-all group"
+              // whileHover={{ y: -5 }}
+              className="p-8 border border-white/5 bg-slate-800 rounded-xl transition-all group overflow-hidden"
             >
-              <span className="material-symbols-outlined text-primary text-6xl mb-6 group-hover:scale-110 transition-transform inline-block">{s.icon}</span>
+              <span className="material-symbols-outlined text-primary text-6xl mb-6 scale-[6] group-hover:scale-[8] opacity-15 duration-500 inline-block">{s.icon}</span>
               <h4 className="text-xl md:text-4xl font-bold mb-3 text-white">{s.title}</h4>
               <p className="text-slate-400 text-sm leading-relaxed">{s.description}</p>
             </motion.div>

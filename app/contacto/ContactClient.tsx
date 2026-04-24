@@ -50,9 +50,36 @@ export default function ContactContent() {
   return (
     <div className="bg-background-dark min-h-screen">
       <section className="relative py-16 md:py-24 overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/30 rounded-full blur-[128px]"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-primary/90 rounded-full blur-[128px]"></div>
+        <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
+          <motion.div
+            className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-[100px]"
+            style={{ background: 'linear-gradient(135deg, #3B96D1 0%, #6631E9 100%)' }}
+            animate={{
+              scale: [1, 2, 1],
+              x: [0, -250, 0],
+              y: [0, -100, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="absolute bottom-0 right-1/4 w-80 h-96 rounded-full blur-[100px]"
+            style={{ background: 'linear-gradient(135deg, #6631E9 0%, #3B96D1 100%)' }}
+            animate={{
+              scale: [1, 1.2, 1],
+              x: [0, 150, 0],
+              y: [0, 15, 0],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1,
+            }}
+          />
         </div>
         <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
           <motion.h1 

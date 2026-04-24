@@ -31,13 +31,13 @@ export default function Footer() {
             <h6 className="font-bold mb-8 uppercase text-xl tracking-widest text-slate-200">Servicios</h6>
             <ul className="space-y-4 text-xl text-slate-400">
               <li>
-                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Software a Medida</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Software a Medida</div></Link>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden font-medium duration-500 hover:text-primary"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Software a Medida</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Software a Medida</div></Link>
               </li>
               <li>
-                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Infraestructura Crítica</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Infraestructura Crítica</div></Link>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden font-medium duration-500 hover:text-primary"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Infraestructura Crítica</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Infraestructura Crítica</div></Link>
               </li>
               <li>
-                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Ciberseguridad</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Ciberseguridad</div></Link>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden font-medium duration-500 hover:text-primary"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Ciberseguridad</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Ciberseguridad</div></Link>
               </li>
             </ul>
           </div>
@@ -45,13 +45,13 @@ export default function Footer() {
             <h6 className="font-bold mb-8 uppercase text-xl tracking-widest text-slate-200">Empresa</h6>
             <ul className="space-y-4 text-xl text-slate-400">
               <li>
-                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Sobre Nosotros</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Sobre Nosotros</div></Link>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden font-medium duration-500 hover:text-primary"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Sobre Nosotros</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Sobre Nosotros</div></Link>
               </li>
               <li>
-                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Proyectos</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Proyectos</div></Link>
+                <Link href="/proyectos" className="group relative inline-flex items-center justify-center overflow-hidden font-medium duration-500 hover:text-primary"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Proyectos</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Proyectos</div></Link>
               </li>
               <li>
-                <Link href="/contacto" className="group relative inline-flex items-center justify-center overflow-hidden rounded-md font-medium duration-500"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Contacto</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Contacto</div></Link>
+                <Link href="/contacto" className="group relative inline-flex items-center justify-center overflow-hidden font-medium duration-500 hover:text-primary"><div className="translate-y-0 transition group-hover:-translate-y-[150%]">Contacto</div><div className="absolute translate-y-[150%] transition group-hover:translate-y-0">Contacto</div></Link>
               </li>
             </ul>
           </div>

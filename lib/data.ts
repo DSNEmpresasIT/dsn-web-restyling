@@ -98,7 +98,7 @@ export const PROJECTS: Project[] = [
 export const SERVICES: Service[] = [
   { icon: "construction", title: "Soluciones llave en mano", description: "Ingeniería, implementación, commissioning y soporte. Optimización desde el origen que garantiza sistemas rápidos, seguros y sin errores de compatibilidad." },
   { icon: "developer_board", title: "Productos propios", description: "Border Pass, Border Ticket, Border Access, Sistemas FIDS, Sistemas de IA para Megafonía, Analítica de Video, Telemetría, iOT, Catálogo Digital y Micrositios." },
-  { icon: "settings_input_component", title: "Infraestructura crítica", description: "Señales débiles, comunicaciones, energía, datacenter y continuidad operativa." },
+  { icon: "host", title: "Infraestructura crítica", description: "Señales débiles, comunicaciones, energía, datacenter y continuidad operativa." },
   { icon: "security", title: "Ciberseguridad transversal", description: "Segmentación, auditoría y hardening según alcance." }
 ];
 

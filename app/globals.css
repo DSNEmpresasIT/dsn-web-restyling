@@ -69,4 +69,7 @@ dialog:-internal-dialog-in-top-layer {
   background: linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 179, 238, 0) 50%, #6631E9 50%, #6631E9 100%);
 }
 
-
+::selection {
+  background-color: #3B96D1;
+  color: white;
+}

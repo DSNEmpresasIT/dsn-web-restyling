@@ -34,7 +34,7 @@ export default function ProjectsPage() {
             <button
               key={c}
               onClick={() => setFilter(c)}
-              className={`px-6 py-2 rounded-full text-sm font-bold border transition-all whitespace-nowrap ${filter === c ? 'bg-primary border-primary text-white shadow-lg shadow-primary/20' : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10 hover:text-white'}`}
+              className={`px-6 py-2 rounded-full text-sm font-bold border transition-all whitespace-nowrap ${filter === c ? 'bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary border-primary text-white shadow-lg shadow-primary/20' : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10 hover:text-white'}`}
             >
               {c}
             </button>

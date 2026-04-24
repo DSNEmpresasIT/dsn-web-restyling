@@ -59,27 +59,26 @@ export const InfraComponent = () => {
               key={i}
               {...fadeIn}
               transition={{ delay: i * 0.1 }}
-              whileHover={{ y: -5 }}
-              className={`bg-slate-800 p-10 border border-white/10 cursor-default rounded-2xl`}
+              className={`group bg-slate-800 p-10 border border-white/10 cursor-default rounded-2xl overflow-hidden`}
             >
-              <span className="material-symbols-outlined text-primary mb-4 text-3xl">{item.icon}</span>
+              <span className="material-symbols-outlined text-primary mb-4 text-3xl  duration-500">{item.icon}</span>
               <h4 className="text-2xl md:text-4xl font-bold mb-4 tracking-tighter">{item.title}</h4>
               <p className="text-slate-400">{item.desc}</p>
             </motion.div>
           ))}
           <motion.div
             {...fadeIn}
-            transition={{ delay: 0.5 }}
-            whileHover={{ scale: 1.02 }}
+            // transition={{ delay: 0.5 }}
+            whileHover={{ y: -5 }}
             className={`p-10 flex flex-col justify-between cursor-pointer rounded-2xl md:col-span-2 xl:col-span-1 group relative overflow-hidden bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary`}
           >
-            <div>
+            <div className='relative z-10'>
               <span className="material-symbols-outlined text-white mb-4 text-3xl">handshake</span>
               <h4 className="text-2xl md:text-4xl font-bold mb-4 tracking-tighter text-white text-balance">Coordinemos un relevamiento técnico y entregamos una propuesta ejecutiva con alcance, hitos, documentación y garantía.</h4>
               {/* <p className="text-white/80">Coordinemos un relevamiento técnico y entregamos una propuesta ejecutiva con alcance, hitos, documentación y garantía.</p> */}
             </div>
-            <Link href="/contacto" className="text-white font-bold text-7xl uppercase after:absolute after:inset-0">
-              <span className="group-hover:animate-spin material-symbols-outlined text-5xl group-hover:scale-125 transition-all duration-300" style={{ fontSize: '48px', color: 'white' }}>arrow_forward</span>
+            <Link href="/contacto" className="font-bold text-7xl uppercase after:absolute after:inset-0">
+              <span className="group-hover:scale-[8] group-hover:text-white/20 text-white material-symbols-outlined text-5xl transition-all duration-300" style={{ fontSize: '48px' }}>arrow_forward</span>
             </Link>
           </motion.div>
         </div>
