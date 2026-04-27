@@ -50,7 +50,7 @@ export default function ContactContent() {
   return (
     <div className="bg-background-dark min-h-screen">
       <section className="relative py-16 md:py-24 overflow-hidden border-b border-white/5">
-        <div className="absolute inset-0 z-0 opacity-70 pointer-events-none">
+        <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
           <motion.div
             className="absolute top-0 left-1/4 w-96 h-96 rounded-full blur-[100px]"
             style={{ background: 'linear-gradient(135deg, #3B96D1 0%, #6631E9 100%)' }}
@@ -176,7 +176,7 @@ export default function ContactContent() {
                   whileTap={{ scale: 0.98 }}
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-full transition-all shadow-lg shadow-primary/20 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
+                  className={`w-full bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary text-white font-bold py-4 rounded-full transition-all shadow-lg shadow-primary/20 ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}
                 >
                   {isSubmitting ? 'Enviando...' : 'Solicitar reunión técnica'}
                 </motion.button>
@@ -200,7 +200,7 @@ export default function ContactContent() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="text-center p-8 rounded-2xl bg-surface/30 border border-white/5"
+                className="text-center p-8 rounded-2xl bg-surface border border-white/5"
               >
                 <span className="material-symbols-outlined text-primary text-3xl mb-4">{item.icon}</span>
                 <h4 className="font-bold text-white mb-2">{item.title}</h4>

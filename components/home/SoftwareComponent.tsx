@@ -18,9 +18,9 @@ export const SoftwareComponent = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
           <motion.div
             {...fadeIn}
-            className="max-w-4xl"
+            className="max-w-4xl flex flex-col items-start"
           >
-            <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Software</p>
+            <p className="text-primary bg-gradient-to-r from-primary to-accent-violet bg-clip-text text-transparent font-bold uppercase tracking-widest text-sm mb-4">Software</p>
             <h2 className="tracking-tight text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3">Plataformas confiables, escalables y seguras.</h2>
             <p className='text-xl text-slate-400'>Construimos plataformas API-first listas para escalar, con arquitecturas modulares, prácticas DevOps/CI/CD, observabilidad y seguridad por diseño para operación continua.</p>
           </motion.div>

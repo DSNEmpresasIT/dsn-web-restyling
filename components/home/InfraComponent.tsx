@@ -44,9 +44,9 @@ export const InfraComponent = () => {
       <div className="max-w-screen-2xl mx-auto px-6 relative z-10">
         <motion.div
           {...fadeIn}
-          className="max-w-4xl mb-16"
+          className="max-w-4xl mb-16 flex flex-col items-start"
         >
-          <p className="text-primary font-bold uppercase tracking-widest text-sm mb-4">Infraestructura</p>
+          <p className="text-primary bg-gradient-to-r from-primary to-accent-violet bg-clip-text text-transparent font-bold uppercase tracking-widest text-sm mb-4">Infraestructura</p>
           {/* <h2 className="text-4xl md:text-7xl uppercase font-semibold bg-gradient-to-r from-[#3B96D1] via-sky-100 to-white bg-clip-text text-transparent mb-6">Infraestructura de alta exigencia, diseñada para operar sin interrupciones</h2> */}
           <h2 className="text-4xl md:text-7xl font-semibold bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent mb-6 pb-3 ">Proyectos llave en mano para requerimientos exigentes y servicios sin interrupciones</h2>
           <p className='text-xl text-slate-400'>Ejecutamos soluciones llave en mano, con soporte y garantía postventa extendida, asegurando continuidad operativa, trazabilidad y performance en entornos críticos.</p>

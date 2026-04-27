@@ -1,4 +1,12 @@
+'use client';
+
+import { useState } from 'react';
+
 const Login = () => {
+
+  const [showPassword, setShowPassword] = useState(false);
+  const year = new Date().getFullYear();
+
   return (
     <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen" >
       <div className="flex min-h-screen w-full flex-col lg:flex-row">
@@ -9,13 +17,12 @@ const Login = () => {
 
           <div className="relative z-10 h-full flex flex-col">
             <div className="flex items-center gap-3 mb-12">
-              <div className="size-10 bg-primary rounded-lg flex items-center justify-center shadow-lg shadow-primary/20">
-                <span className="material-symbols-outlined text-white text-2xl">hub</span>
-              </div>
-              <h2 className="text-white text-xl font-extrabold tracking-tight">DSN EMPRESAS</h2>
+              <span className="text-xl font-black tracking-tight uppercase">
+                <span className='group-hover:scale-110'>DSN</span><span className="text-primary bg-gradient-to-r from-primary to-accent-violet bg-clip-text text-transparent">Empresas</span>
+              </span>
             </div>
             <div className="space-y-6 my-auto max-w-xl">
-              <h1 className="text-white text-7xl font-black leading-tight tracking-tight">
+              <h1 className="text-7xl font-black leading-tight tracking-tight bg-gradient-to-r from-primary via-sky-100 to-white bg-clip-text text-transparent">
                 Acceso Clientes DSN
               </h1>
               <p className="text-slate-400 text-lg leading-relaxed font-light max-w-lg">
@@ -72,15 +79,29 @@ const Login = () => {
                   <a className="text-sm font-medium text-primary hover:underline" href="#">¿Olvidaste tu contraseña?</a>
                 </div>
                 <div className="relative group">
-                  <input className="w-full h-12 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg px-4 pr-12 text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="••••••••" type="password" />
-                  <button className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary transition-colors" type="button">
-                    <span className="material-symbols-outlined">visibility</span>
+                  <input className="w-full h-12 bg-white dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg px-4 pr-12 text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none" placeholder="••••••••" type={showPassword ? "text" : "password"} />
+                  <button 
+                    className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary transition-colors" 
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    <span className="material-symbols-outlined">
+                      {showPassword ? 'visibility_off' : 'visibility'}
+                    </span>
                   </button>
                 </div>
               </div>
-              <button className="w-full h-12 bg-primary hover:bg-primary/90 text-white font-bold rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 mt-4">
+              {/* <button className="bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary w-full h-12  text-white font-bold rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 mt-4 group">
                 <span>Iniciar sesión</span>
                 <span className="material-symbols-outlined text-xl">login</span>
+              </button> */}
+              <button className="w-full group relative inline-flex h-12 items-center justify-center overflow-hidden duration-500 text-white px-5 py-2.5 rounded-full text-sm font-bold transition-all bg-primary hover:bg-primary/90 bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary">
+                <div className="translate-x-0 opacity-100 transition group-hover:-translate-x-[150%] group-hover:opacity-0">Iniciar sesión</div>
+                <div className="absolute translate-x-[150%] opacity-0 transition group-hover:translate-x-0 group-hover:opacity-100 flex">
+                  <span className="material-symbols-outlined">
+                    login
+                  </span>
+                </div>
               </button>
             </form>
             <div className="p-4 bg-slate-100 dark:bg-slate-800/40 rounded-lg border border-slate-200 dark:border-slate-700/50 flex gap-3">
@@ -92,7 +113,7 @@ const Login = () => {
             <footer className="pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-wrap justify-center lg:justify-start gap-x-8 gap-y-2">
               <a className="text-xs text-slate-400 hover:text-primary transition-colors" href="#">Contacto</a>
               <a className="text-xs text-slate-400 hover:text-primary transition-colors" href="#">Soporte</a>
-              <span className="text-xs text-slate-500">© <span id="year">2026</span> DSN Infraestructura</span>
+              <span className="text-xs text-slate-500">© <span id="year">{year}</span> DSN Infraestructura</span>
             </footer>
           </div>
         </div>
