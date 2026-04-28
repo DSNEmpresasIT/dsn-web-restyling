@@ -44,6 +44,8 @@ FROM node:20-alpine AS runner
 
 RUN apk add --no-cache nginx
 
+ENV NODE_ENV=production
+
 WORKDIR /app
 
 # Next.js standalone server + static assets
@@ -54,7 +56,7 @@ COPY --from=build-nextjs /app/public ./public
 # Angular build output → served as static files by nginx
 COPY --from=build-angular /app/dist/dashboard-ecommerce /usr/share/nginx/html/dashboard-ecommerce
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 COPY start.sh ./
 RUN chmod +x start.sh
 

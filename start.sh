@@ -1,13 +1,13 @@
 #!/bin/sh
-set -e
 
-# Start Next.js standalone server on port 3000
-node /app/server.js &
+# Start Next.js standalone server bound to localhost
+HOSTNAME=127.0.0.1 PORT=3000 node /app/server.js &
 
-# Wait until Next.js is accepting connections before starting nginx
-until nc -z 127.0.0.1 3000; do
-  sleep 0.1
-done
+# Give Next.js time to initialize before nginx starts proxying
+sleep 2
 
-# Start nginx in foreground (keeps container alive)
+# Validate nginx config — if this prints an error, it shows in docker logs
+nginx -t
+
+# Start nginx in foreground — keeps the container alive
 exec nginx -g 'daemon off;'
