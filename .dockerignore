@@ -27,3 +27,14 @@ docs/
 # Test coverage
 coverage/
 dashboard-ecommerce/coverage/
+
+# Logs
+logs/
+*.log
+
+# OS / editor artifacts
+.DS_Store
+*.suo
+*.sw?
+out/
+.cache/

@@ -58,7 +58,7 @@ COPY --from=build-angular /app/dist/dashboard-ecommerce /usr/share/nginx/html/da
 
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY start.sh ./
-RUN chmod +x start.sh
+RUN sed -i 's/\r$//' start.sh && chmod +x start.sh
 
 EXPOSE 80
 
