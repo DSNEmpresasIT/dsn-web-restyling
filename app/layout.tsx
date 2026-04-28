@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import AppShell from '@/components/AppShell';
+import ToasterProvider from '@/components/common/ToasterProvider';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dsnempresas.com.ar'),
@@ -93,6 +94,7 @@ export default function RootLayout({
         <AppShell>
           {children}
         </AppShell>
+        <ToasterProvider />
       </body>
     </html>
   );
