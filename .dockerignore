@@ -1,0 +1,29 @@
+# Node dependencies
+node_modules
+dashboard-ecommerce/node_modules
+
+# Build outputs
+.next
+dashboard-ecommerce/dist
+dashboard-ecommerce/.angular
+
+# Git
+.git
+.gitignore
+dashboard-ecommerce/.git
+
+# Secrets — passed as build args, not copied
+.env
+.env.*
+
+# Dev/editor artifacts
+*.md
+docs/
+.agents/
+.claude/
+.vscode/
+.idea/
+
+# Test coverage
+coverage/
+dashboard-ecommerce/coverage/
