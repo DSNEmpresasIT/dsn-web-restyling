@@ -163,7 +163,7 @@ export default function ProjectDetailClient({ id }: ProjectDetailClientProps) {
                 </div>
               </div>
               <div className="mt-12 pt-12 border-t border-white/5">
-                <button className="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-full transition-all hover:scale-105">
+                <button className="w-full bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-accent-violet to-primary text-white font-bold py-4 rounded-full transition-all hover:scale-105">
                   Solicitar reporte técnico
                 </button>
               </div>

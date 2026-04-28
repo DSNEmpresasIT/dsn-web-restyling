@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 const Login = () => {
 
@@ -11,9 +12,35 @@ const Login = () => {
     <div className="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen" >
       <div className="flex min-h-screen w-full flex-col lg:flex-row">
         <div className="relative hidden w-full lg:flex lg:w-1/2 flex-col justify-between p-12 overflow-hidden bg-slate-900 border-r border-slate-800">
-          <div className="absolute inset-0 grid-pattern opacity-40"></div>
-          <div className="absolute inset-0 tech-gradient"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[60%] opacity-20 bg-primary blur-[120px] rounded-full"></div>
+          <motion.div
+            className="opacity-20 absolute top-0 left-1/4 w-96 h-96 rounded-full blur-[100px]"
+            style={{ background: 'linear-gradient(135deg, #3B96D1 0%, #6631E9 100%)' }}
+            animate={{
+              scale: [1, 2, 1],
+              x: [0, -250, 0],
+              y: [0, -100, 0],
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          />
+          <motion.div
+            className="opacity-20 absolute bottom-0 right-1 w-80 h-96 rounded-full blur-[100px]"
+            style={{ background: 'linear-gradient(135deg, #6631E9 0%, #3B96D1 100%)' }}
+            animate={{
+              scale: [1, 1.2, 1],
+              x: [0, 150, 0],
+              y: [0, 15, 0],
+            }}
+            transition={{
+              duration: 10,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: 1,
+            }}
+          />
 
           <div className="relative z-10 h-full flex flex-col">
             <div className="flex items-center gap-3 mb-12">
